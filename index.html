@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ビストロパパ モーニングダッシュボード</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { min-height: 100vh; background: linear-gradient(160deg,#0f0a00,#1e1205); color: #fef3c7; font-family: 'Hiragino Kaku Gothic Pro','メイリオ',sans-serif; padding: 16px; }
+  .header { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; margin-bottom: 14px; }
+  .clock { font-size: 2.5rem; font-family: monospace; font-weight: 900; color: #fff; text-shadow: 0 0 20px rgba(251,191,36,0.6); }
+  .date-str { color: #fbbf24; font-size: 0.85rem; margin-top: 2px; font-weight: 600; }
+  .weather-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(251,191,36,0.3); border-radius: 10px; padding: 10px 14px; text-align: right; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 8px; margin-bottom: 14px; }
+  .kpi-item { border-radius: 8px; padding: 10px 12px; }
+  .kpi-label { font-size: 0.65rem; color: #fbbf24; margin-bottom: 3px; font-weight: 600; }
+  .kpi-value { font-size: 0.82rem; color: #fff; font-weight: 700; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+  .tab-btn { padding: 9px 18px; border-radius: 20px; border: 1.5px solid #d97706; background: transparent; color: #fbbf24; font-size: 0.88rem; cursor: pointer; font-weight: 600; transition: all 0.2s; }
+  .tab-btn:hover { background: rgba(217,119,6,0.2); }
+  .tab-btn.active { background: #d97706; color: #fff; font-weight: 700; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  .news-item { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,200,80,0.2); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s; }
+  .news-item:hover { background: rgba(255,200,80,0.12); border-color: rgba(255,200,80,0.5); transform: translateX(3px); }
+  .news-cat { font-size: 0.68rem; color: #fbbf24; margin-bottom: 3px; font-weight: 700; }
+  .news-text { font-size: 0.9rem; color: #fff; font-weight: 500; line-height: 1.5; }
+  .news-time { font-size: 0.65rem; color: #d97706; white-space: nowrap; font-weight: 600; }
+  .news-detail { display: none; margin-top: 10px; padding: 10px; background: rgba(0,0,0,0.3); border-radius: 8px; font-size: 0.82rem; color: #fde68a; line-height: 1.7; border-left: 3px solid #d97706; }
+  .news-detail.open { display: block; }
+  .open-btn { display: inline-block; margin-top: 8px; font-size: 0.78rem; color: #fbbf24; background: rgba(217,119,6,0.25); border: 1px solid #d97706; border-radius: 6px; padding: 4px 12px; cursor: pointer; font-weight: 600; transition: all 0.2s; }
+  .open-btn:hover { background: #d97706; color: #fff; }
+  .trends-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+  .trend-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,200,80,0.2); border-radius: 10px; padding: 13px; cursor: pointer; transition: all 0.2s; }
+  .trend-card:hover { background: rgba(255,200,80,0.1); border-color: rgba(255,200,80,0.5); transform: translateY(-2px); }
+  .trend-tag { font-size: 0.62rem; background: rgba(217,119,6,0.3); color: #fbbf24; padding: 2px 7px; border-radius: 6px; font-weight: 600; }
+  .trend-title { font-size: 0.88rem; font-weight: 700; color: #fff; margin: 6px 0 4px; }
+  .trend-desc { font-size: 0.75rem; color: #fde68a; line-height: 1.6; }
+  .trend-detail { display: none; margin-top: 8px; padding: 8px; background: rgba(0,0,0,0.3); border-radius: 6px; font-size: 0.75rem; color: #fde68a; line-height: 1.7; border-left: 3px solid #d97706; }
+  .trend-detail.open { display: block; }
+  .actions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .action-group { border-radius: 10px; padding: 14px; }
+  .action-title { font-weight: 700; margin-bottom: 10px; font-size: 0.88rem; }
+  .action-row { display: flex; gap: 8px; margin-bottom: 8px; align-items: flex-start; cursor: pointer; padding: 5px 6px; border-radius: 6px; transition: background 0.15s; }
+  .action-row:hover { background: rgba(255,255,255,0.07); }
+  .action-row input[type=checkbox] { margin-top: 2px; width: 14px; height: 14px; accent-color: #d97706; cursor: pointer; flex-shrink: 0; }
+  .action-text { font-size: 0.82rem; color: #fff; line-height: 1.5; }
+  .action-text.done { text-decoration: line-through; color: #78350f; }
+  .tip-box { margin-top: 12px; padding: 12px 14px; background: rgba(217,119,6,0.08); border: 1px solid rgba(217,119,6,0.25); border-radius: 10px; }
+  .loading { text-align: center; padding: 40px; color: #d97706; font-size: 1rem; }
+  .footer { margin-top: 18px; text-align: center; font-size: 0.65rem; color: #78350f; }
+  .updated-at { text-align: right; font-size: 0.65rem; color: #78350f; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div style="font-size:0.65rem;color:#a16207;margin-bottom:3px;letter-spacing:0.05em">BISTRO PAPA MORNING DASHBOARD</div>
+    <div style="font-size:1rem;font-weight:700;color:#fbbf24">おはようございます、滝村さん ☀️</div>
+  </div>
+  <div style="text-align:center">
+    <div class="clock" id="clock">00:00:00</div>
+    <div class="date-str" id="dateStr"></div>
+  </div>
+  <div class="weather-card">
+    <div style="font-size:0.65rem;color:#a16207;margin-bottom:4px;font-weight:600">東京 渋谷</div>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:8px">
+      <span style="font-size:1.5rem">🌦</span>
+      <div>
+        <div style="font-size:1.4rem;font-weight:900;color:#fff" id="temp">--°C</div>
+        <div style="font-size:0.72rem;color:#fde68a" id="weather-desc">取得中...</div>
+      </div>
+    </div>
+    <div style="font-size:0.68rem;color:#fbbf24;margin-top:4px;font-weight:600">🌸 桜開花予想：3月17日</div>
+  </div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-item" style="background:rgba(34,197,94,0.1);border-left:3px solid #22c55e">
+    <div class="kpi-label">note</div><div class="kpi-value">📝 毎日投稿中</div>
+  </div>
+  <div class="kpi-item" style="background:rgba(239,68,68,0.1);border-left:3px solid #ef4444">
+    <div class="kpi-label">YouTube</div><div class="kpi-value">📺 1,800 → 10,000</div>
+  </div>
+  <div class="kpi-item" style="background:rgba(168,85,247,0.1);border-left:3px solid #a855f7">
+    <div class="kpi-label">Instagram</div><div class="kpi-value">📸 1,182人</div>
+  </div>
+  <div class="kpi-item" style="background:rgba(245,158,11,0.1);border-left:3px solid #f59e0b">
+    <div class="kpi-label">Phase 1</div><div class="kpi-value">🚀 資産構築中</div>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab('news',this)">📰 ニュース</button>
+  <button class="tab-btn" onclick="switchTab('trends',this)">🍽 食トレンド</button>
+  <button class="tab-btn" onclick="switchTab('actions',this)">✅ アクション</button>
+</div>
+
+<div id="tab-news" class="tab-content active">
+  <div class="updated-at" id="updated-at"></div>
+  <div id="news-list"><div class="loading">📰 ニュースを読み込み中...</div></div>
+</div>
+
+<div id="tab-trends" class="tab-content">
+  <div class="trends-grid" id="trends-grid"></div>
+  <div class="tip-box" style="margin-top:12px">
+    <span style="color:#fbbf24;font-weight:700;font-size:0.8rem">💡 ビストロパパ接点：</span>
+    <span style="color:#fde68a;font-size:0.78rem">「一汁三菜ボウル」「海藻」「麹×発酵」はパパ料理×家庭コンテンツの最前線。note・YouTube企画のネタとして今すぐ活用！</span>
+  </div>
+</div>
+
+<div id="tab-actions" class="tab-content">
+  <div class="actions-grid" id="actions-grid"></div>
+</div>
+
+<div class="footer">株式会社ビストロパパ ／「パパ料理・トモショクを通して、家庭の幸せを創造する」</div>
+
+<script>
+// ---- 食トレンド（固定） ----
+const TRENDS = [
+  { icon:"🍛", tag:"ネクストカレー", title:"ビリヤニ本格上陸", desc:"家庭用キット続々。週末ごちそう料理の新定番に。", detail:"インド・パキスタン発の炊き込み米料理。専門店急増中。パパ料理×週末ごちそうコンテンツとの相性◎", url:"https://www.google.com/search?q=ビリヤニ+レシピ+家庭" },
+  { icon:"🥣", tag:"セルフケア飯", title:"一汁三菜ボウル", desc:"「自分のために作る」新食習慣。器一つで完結。", detail:"忙しい日常で「自分を大切にする食事」として注目。ビストロパパのコンセプトと直結するトレンド。", url:"https://www.google.com/search?q=一汁三菜+ボウル" },
+  { icon:"🌿", tag:"サステナブル", title:"海藻ルネサンス", desc:"腸活×環境配慮で世界から注目の食材。", detail:"わかめ・昆布・ひじきなど日本食材が世界標準に。デジタル食育コンテンツのネタとして最適。", url:"https://www.google.com/search?q=海藻+腸活+スーパーフード" },
+  { icon:"🍵", tag:"コーヒー代替", title:"クラフト・ティー", desc:"スパイスチャイ・アイスミルクティーが定着。", detail:"カフェイン過多を避ける層を中心に急拡大。料理教室メニューとの組み合わせ提案チャンス。", url:"https://www.google.com/search?q=クラフトティー+トレンド" },
+  { icon:"🔥", tag:"体験型外食", title:"ガチフードコート", desc:"虎ノ門・赤坂など都心フードホールが進化中。", detail:"高級フードホールが都心に続々オープン。コラボ企画・出店機会としても要チェック。", url:"https://www.google.com/search?q=東京+フードホール+2026" },
+  { icon:"🫙", tag:"時間が食材", title:"麹×発酵ブーム", desc:"ミシュランも注目。発酵・麹が世界標準トレンドに。", detail:"塩麹・醤油麹・甘酒など家庭でできる発酵調味料が再注目。YouTube・noteコンテンツの鉄板テーマ。", url:"https://www.google.com/search?q=麹+発酵+レシピ" },
+];
+
+const ACTIONS = [
+  { title:"🌅 朝ルーティン", color:"#f59e0b", bg:"rgba(245,158,11,0.1)", items:["ボイスジャーナル録音","ジョギング30分","Claude → note下書き"] },
+  { title:"📱 コンテンツ", color:"#3b82f6", bg:"rgba(59,130,246,0.1)", items:["note：今日のテーマ決定＆投稿","Instagram：料理写真1枚","YouTube：次回テーマ検討"] },
+  { title:"🚀 ビジネス", color:"#22c55e", bg:"rgba(34,197,94,0.1)", items:["クライアント案件の進捗確認","Odorana 提案書確認","大正大学：酒井さん連絡"] },
+  { title:"📊 数字確認", color:"#a855f7", bg:"rgba(168,85,247,0.1)", items:["YouTube登録者数チェック","Instagram フォロワー確認","note スキ・PV確認"] },
+];
+
+// ---- ニュース取得（news.json から読み込み） ----
+async function loadNews() {
+  try {
+    const res = await fetch('news.json?t=' + Date.now());
+    const data = await res.json();
+    const el = document.getElementById('news-list');
+    const upd = document.getElementById('updated-at');
+    if (data.updated) upd.textContent = '最終更新：' + data.updated;
+    el.innerHTML = data.articles.map((n,i) => `
+      <div class="news-item" onclick="toggleNews(${i})">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+          <div style="flex:1">
+            <div class="news-cat">${n.source}</div>
+            <div class="news-text">${n.title}</div>
+          </div>
+          <span id="arr-${i}" style="color:#d97706;font-size:0.75rem;flex-shrink:0">▼</span>
+        </div>
+        <div class="news-detail" id="nd-${i}">
+          ${n.description || n.title}
+          <br><button class="open-btn" onclick="event.stopPropagation();window.open('${n.url}','_blank')">🔗 記事を読む →</button>
+        </div>
+      </div>
+    `).join('');
+  } catch(e) {
+    document.getElementById('news-list').innerHTML = '<div class="loading" style="color:#ef4444">ニュースの読み込みに失敗しました。<br>しばらくしてから再読み込みしてください。</div>';
+  }
+}
+
+function toggleNews(i) {
+  const d = document.getElementById('nd-'+i);
+  const a = document.getElementById('arr-'+i);
+  d.classList.toggle('open');
+  a.textContent = d.classList.contains('open') ? '▲' : '▼';
+}
+
+// ---- 天気取得 ----
+async function loadWeather() {
+  try {
+    const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=35.6585&longitude=139.7454&current=temperature_2m,weathercode&timezone=Asia/Tokyo');
+    const data = await res.json();
+    const temp = Math.round(data.current.temperature_2m);
+    document.getElementById('temp').textContent = temp + '°C';
+    const code = data.current.weathercode;
+    const desc = code === 0 ? '☀️ 快晴' : code <= 3 ? '⛅ くもり' : code <= 67 ? '🌧 雨' : code <= 77 ? '❄️ 雪' : '🌦 不安定';
+    document.getElementById('weather-desc').textContent = desc;
+  } catch(e) {}
+}
+
+// ---- 食トレンド描画 ----
+function renderTrends() {
+  document.getElementById('trends-grid').innerHTML = TRENDS.map((t,i) => `
+    <div class="trend-card" onclick="toggleTrend(${i})">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span style="font-size:1.5rem">${t.icon}</span>
+        <span class="trend-tag">${t.tag}</span>
+      </div>
+      <div class="trend-title">${t.title}</div>
+      <div class="trend-desc">${t.desc}</div>
+      <div class="trend-detail" id="tr-${i}">
+        ${t.detail}<br>
+        <button class="open-btn" onclick="event.stopPropagation();window.open('${t.url}','_blank')">🔍 詳しく調べる →</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleTrend(i) {
+  document.getElementById('tr-'+i).classList.toggle('open');
+}
+
+// ---- アクション描画 ----
+function renderActions() {
+  document.getElementById('actions-grid').innerHTML = ACTIONS.map(g => `
+    <div class="action-group" style="background:${g.bg};border-top:3px solid ${g.color}">
+      <div class="action-title" style="color:${g.color}">${g.title}</div>
+      ${g.items.map(item => `
+        <label class="action-row">
+          <input type="checkbox" onchange="this.nextElementSibling.classList.toggle('done',this.checked)">
+          <span class="action-text">${item}</span>
+        </label>
+      `).join('')}
+    </div>
+  `).join('');
+}
+
+// ---- タブ切替 ----
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ---- 時計 ----
+function updateClock() {
+  const now = new Date();
+  const p = n => String(n).padStart(2,'0');
+  document.getElementById('clock').textContent = p(now.getHours())+':'+p(now.getMinutes())+':'+p(now.getSeconds());
+  const days = ['日','月','火','水','木','金','土'];
+  document.getElementById('dateStr').textContent = now.getFullYear()+'年'+(now.getMonth()+1)+'月'+now.getDate()+'日（'+days[now.getDay()]+'）';
+}
+
+// ---- 初期化 ----
+loadNews();
+loadWeather();
+renderTrends();
+renderActions();
+updateClock();
+setInterval(updateClock, 1000);
+</script>
+</body>
+</html>
