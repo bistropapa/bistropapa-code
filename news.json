@@ -1,110 +1,366 @@
-{
-  "updated": "2026-03-17 09:56 JST",
-  "articles": [
-    {
-      "label": "料理・食",
-      "title": "【提携駐車場あり＆女性チョコプレゼント♪】マンガ・アニメ・ゲーム好きor理解者限定婚活パーティー",
-      "url": "https://machicon.jp/events/XNTkyL/",
-      "source": "Machicon.jp",
-      "publishedAt": "2026-03-16T00:44:06Z"
-    },
-    {
-      "label": "料理・食",
-      "title": "福島・飯坂温泉にある石像が「思ったよりフレンチクルーラー」だった…！「美味しそう」と2.2万「いいね」",
-      "url": "https://www.huffingtonpost.jp/entry/story_jp_69b61053e4b01574ee5b7531",
-      "source": "Huffingtonpost.jp",
-      "publishedAt": "2026-03-16T00:43:16Z"
-    },
-    {
-      "label": "料理・食",
-      "title": "【イタリアン料理＆デザート★飲み放題付き】【Spring Festa in IKEBUKURO 】★席替えで異性全員と話せる★",
-      "url": "https://machicon.jp/events/AcfJrg/",
-      "source": "Machicon.jp",
-      "publishedAt": "2026-03-16T00:30:22Z"
-    },
-    {
-      "label": "料理・食",
-      "title": "【イタリアン料理＆デザート＆★飲み放題付き】「池袋de大人のプチ街コン」★席替えで異性全員と話せる★",
-      "url": "https://machicon.jp/events/wnh0Bl/",
-      "source": "Machicon.jp",
-      "publishedAt": "2026-03-16T00:29:03Z"
-    },
-    {
-      "label": "料理・食",
-      "title": "リブート （第8話・2026/3/15） 感想",
-      "url": "http://director.blog.shinobi.jp/Entry/20204/",
-      "source": "Shinobi.jp",
-      "publishedAt": "2026-03-16T00:09:17Z"
-    },
-    {
-      "label": "パパ・育児",
-      "title": "世界自閉症啓発デーに合わせ、発達障害の子どもと家族の「やさしい旅行」を実証（三重県鳥羽市・旅館「扇芳閣」）",
-      "url": "https://prtimes.jp/main/html/rd/p/000000005.000075732.html",
-      "source": "Prtimes.jp",
-      "publishedAt": "2026-03-15T22:00:00Z"
-    },
-    {
-      "label": "パパ・育児",
-      "title": "動画投稿サイトのコメント欄で「子育てが早く終わっていいな」と書き込んだ男性(54)逮捕",
-      "url": "https://majikichi.com/archives/10976779.html",
-      "source": "Majikichi.com",
-      "publishedAt": "2026-03-15T11:30:54Z"
-    },
-    {
-      "label": "パパ・育児",
-      "title": "「セスジキノボリカンガルーの喉元から胸のあたりのどこかに住みたい」もっふりしたぬいぐるみのような毛並みと強者のオーラでみんなをメロメロにする",
-      "url": "https://togetter.com/li/2674978",
-      "source": "Togetter.com",
-      "publishedAt": "2026-03-15T08:07:50Z"
-    },
-    {
-      "label": "パパ・育児",
-      "title": "ホルムズ海峡、結論を急ぐな",
-      "url": "https://eiji.txt-nifty.com/diary/2026/03/post-502ec2.html",
-      "source": "Txt-nifty.com",
-      "publishedAt": "2026-03-15T04:52:05Z"
-    },
-    {
-      "label": "パパ・育児",
-      "title": "【Apple TV名作ガイド】ウルフウォーカー：「ソング・オブ・ザ・シー 海のうた」のカートゥーン・サルーンによるファンタジーアニメ映画",
-      "url": "https://arigato-ipod.com/2026/03/apple-tv-plus-review-wolfwalkers.html",
-      "source": "Arigato-ipod.com",
-      "publishedAt": "2026-03-15T03:01:05Z"
-    },
-    {
-      "label": "AI・テクノロジー",
-      "title": "StorageManagerのある生活（使用レポート）",
-      "url": "https://news.livedoor.com/pr_article/detail/30774271/",
-      "source": "Livedoor.com",
-      "publishedAt": "2026-03-16T00:55:15Z"
-    },
-    {
-      "label": "AI・テクノロジー",
-      "title": "GlobalData[MWC 2026] GlobalData、AI時代の音声進化に関するホワイトペーパーを発表",
-      "url": "https://japan.cnet.com/release/31154099/",
-      "source": "CNET",
-      "publishedAt": "2026-03-16T00:55:00Z"
-    },
-    {
-      "label": "AI・テクノロジー",
-      "title": "中国各地が企業の「ザリガニ飼育」をサポートする措置打ち出す",
-      "url": "https://news.livedoor.com/article/detail/30774180/",
-      "source": "Livedoor.com",
-      "publishedAt": "2026-03-16T00:30:02Z"
-    },
-    {
-      "label": "AI・テクノロジー",
-      "title": "The Business research company救急医療サービスソフトウェア市場は、AI対応ディスパッチとリアルタイム緊急対応の高度化によって前進",
-      "url": "https://japan.cnet.com/release/31154123/",
-      "source": "CNET",
-      "publishedAt": "2026-03-16T00:30:00Z"
-    },
-    {
-      "label": "AI・テクノロジー",
-      "title": "エヌビディア帝国が崩壊？メタ・OpenAIがAMDと交わした「15兆円・運命共同体」",
-      "url": "https://biz-journal.jp/company/post_393869.html",
-      "source": "Biz-journal.jp",
-      "publishedAt": "2026-03-16T00:20:27Z"
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Bistro Papa Daily News Fetcher
+- Free / no API key
+- Google News RSS based
+- Focused on:
+  1) 料理・食
+  2) パパ・育児
+  3) AI・テクノロジー
+- Output: news.json
+
+使い方:
+  python scripts/fetch_news.py
+"""
+
+from __future__ import annotations
+
+import json
+import re
+import sys
+import time
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from pathlib import Path
+from typing import Iterable
+from zoneinfo import ZoneInfo
+
+
+JST = ZoneInfo("Asia/Tokyo")
+OUTPUT_FILE = Path("news.json")
+USER_AGENT = "Mozilla/5.0 (compatible; BistroPapaNewsBot/1.0; +https://github.com/bistropapa/bistropapa-code)"
+
+# -----------------------------
+# 設計思想
+# -----------------------------
+# No.1狙い:
+#   できるだけ無料・安定で止まりにくい構成
+# No.2堅実:
+#   広すぎる検索をやめ、除外語とノイズソースを強化
+# Only1:
+#   ビストロパパ視点（家庭料理 / 共食 / パパ育児 / AI活用）に寄せる
+
+
+@dataclass
+class CategoryConfig:
+    label: str
+    queries: list[str]
+    include_any: list[str]
+    exclude_any: list[str]
+    blocked_sources: list[str]
+    blocked_domains: list[str]
+    max_items: int = 5
+
+
+CATEGORY_CONFIGS: list[CategoryConfig] = [
+    CategoryConfig(
+        label="料理・食",
+        queries=[
+            '家庭料理 OR レシピ OR 食育 OR 給食 OR 食品 OR 冷凍食品 OR 健康食 -婚活 -街コン -飲み放題 -アニメ -ゲーム -感想 -イベント',
+            '共食 OR 食卓 OR 子ども 食事 OR パパ 料理 OR 時短 レシピ -婚活 -街コン -飲み放題 -アニメ -ゲーム -感想 -イベント',
+        ],
+        include_any=[
+            "料理", "レシピ", "食", "食育", "給食", "食品", "食卓", "共食",
+            "弁当", "冷凍食品", "時短", "健康食", "家庭料理", "栄養"
+        ],
+        exclude_any=[
+            "婚活", "街コン", "飲み放題", "アニメ", "ゲーム",
+            "感想", "ランキング", "占い", "フレンチクルーラー",
+            "プレゼント", "限定パーティー", "イベント情報"
+        ],
+        blocked_sources=[
+            "Machicon.jp", "Shinobi.jp", "Togetter.com", "Majikichi.com"
+        ],
+        blocked_domains=[
+            "machicon.jp", "togetter.com", "majikichi.com", "shinobi.jp"
+        ],
+        max_items=5,
+    ),
+    CategoryConfig(
+        label="パパ・育児",
+        queries=[
+            '子育て OR 育児 OR 父親 OR パパ OR 家事育児 OR 共働き OR 食育 -逮捕 -炎上 -動物 -映画 -アニメ -芸能',
+            '家族 OR 親子 OR 子ども OR 保育 OR 教育 OR パパ育児 OR 父親支援 -逮捕 -炎上 -動物 -映画 -アニメ -芸能'
+        ],
+        include_any=[
+            "子育て", "育児", "父親", "パパ", "親子", "家族",
+            "子ども", "教育", "保育", "食育", "共働き", "家事育児"
+        ],
+        exclude_any=[
+            "逮捕", "炎上", "動物", "カンガルー", "映画", "アニメ",
+            "Apple TV", "名作ガイド", "コメント欄", "雑談", "政治"
+        ],
+        blocked_sources=[
+            "Majikichi.com", "Togetter.com", "Txt-nifty.com", "Arigato-ipod.com"
+        ],
+        blocked_domains=[
+            "majikichi.com", "togetter.com", "txt-nifty.com", "arigato-ipod.com"
+        ],
+        max_items=5,
+    ),
+    CategoryConfig(
+        label="AI・テクノロジー",
+        queries=[
+            '生成AI OR AI活用 OR AI DX OR 自動化 OR 教育DX OR 業務効率化 -PR -広告',
+            'OpenAI OR ChatGPT OR Gemini OR Claude OR AIエージェント OR 機械学習 -PR -広告'
+        ],
+        include_any=[
+            "AI", "生成AI", "ChatGPT", "OpenAI", "Gemini", "Claude",
+            "DX", "自動化", "機械学習", "LLM", "AI活用", "AIエージェント"
+        ],
+        exclude_any=[
+            "PR", "広告", "ホワイトペーパー", "市場調査レポート",
+            "Sponsored", "タイアップ", "プレスリリース"
+        ],
+        blocked_sources=[
+            "Livedoor.com"
+        ],
+        blocked_domains=[
+            "prtimes.jp", "livedoor.com"
+        ],
+        max_items=5,
+    ),
+]
+
+
+def fetch_url(url: str, timeout: int = 20) -> bytes:
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        return resp.read()
+
+
+def build_google_news_rss_url(query: str) -> str:
+    encoded = urllib.parse.quote(query, safe="")
+    return (
+        "https://news.google.com/rss/search"
+        f"?q={encoded}"
+        "&hl=ja&gl=JP&ceid=JP:ja"
+    )
+
+
+def clean_text(text: str) -> str:
+    if not text:
+        return ""
+    text = re.sub(r"\s+", " ", text).strip()
+    text = text.replace("\u3000", " ")
+    return text
+
+
+def parse_google_news_rss(xml_bytes: bytes) -> list[dict]:
+    root = ET.fromstring(xml_bytes)
+    items: list[dict] = []
+
+    for item in root.findall(".//item"):
+        title = clean_text(item.findtext("title", default=""))
+        link = clean_text(item.findtext("link", default=""))
+        pub_date_raw = clean_text(item.findtext("pubDate", default=""))
+        source = clean_text(item.findtext("source", default=""))
+
+        if not title or not link:
+            continue
+
+        published_at = ""
+        if pub_date_raw:
+            try:
+                dt = parsedate_to_datetime(pub_date_raw)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                published_at = dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+            except Exception:
+                published_at = ""
+
+        items.append({
+            "title": title,
+            "url": link,
+            "source": source or extract_domain(link),
+            "publishedAt": published_at,
+        })
+
+    return items
+
+
+def extract_domain(url: str) -> str:
+    try:
+        return urllib.parse.urlparse(url).netloc.lower()
+    except Exception:
+        return ""
+
+
+def normalize_for_dedup(text: str) -> str:
+    text = text.lower()
+    text = re.sub(r"[【】\[\]\(\)（）「」『』!！?？:：・/／\-—_.,、。]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def contains_any(text: str, words: Iterable[str]) -> bool:
+    t = text.lower()
+    return any(w.lower() in t for w in words)
+
+
+def is_blocked_source(source: str, blocked_sources: list[str]) -> bool:
+    s = source.lower().strip()
+    return any(bs.lower() in s for bs in blocked_sources)
+
+
+def is_blocked_domain(url: str, blocked_domains: list[str]) -> bool:
+    domain = extract_domain(url)
+    return any(bd.lower() in domain for bd in blocked_domains)
+
+
+def is_relevant(item: dict, cfg: CategoryConfig) -> bool:
+    title = item.get("title", "")
+    source = item.get("source", "")
+    url = item.get("url", "")
+
+    joined = f"{title} {source}"
+
+    if not title or not url:
+        return False
+
+    if contains_any(joined, cfg.exclude_any):
+        return False
+
+    if is_blocked_source(source, cfg.blocked_sources):
+        return False
+
+    if is_blocked_domain(url, cfg.blocked_domains):
+        return False
+
+    if not contains_any(joined, cfg.include_any):
+        return False
+
+    return True
+
+
+def score_item(item: dict, cfg: CategoryConfig) -> int:
+    text = f"{item.get('title', '')} {item.get('source', '')}"
+    score = 0
+
+    for word in cfg.include_any:
+        if word.lower() in text.lower():
+            score += 2
+
+    # 信頼しやすい雰囲気のソースを少し加点
+    preferred_sources = [
+        "NHK", "朝日", "毎日", "読売", "日経", "ITmedia", "Impress", "CNET", "Yahoo",
+        "教育新聞", "食品新聞", "農業協同組合", "PRTIMES"
+    ]
+    if contains_any(item.get("source", ""), preferred_sources):
+        score += 1
+
+    # タイトルの長すぎる告知系を少し減点
+    if len(item.get("title", "")) > 60:
+        score -= 1
+
+    return score
+
+
+def fetch_category_articles(cfg: CategoryConfig) -> list[dict]:
+    collected: list[dict] = []
+    seen_keys: set[str] = set()
+
+    for query in cfg.queries:
+        url = build_google_news_rss_url(query)
+
+        try:
+            xml_bytes = fetch_url(url)
+            items = parse_google_news_rss(xml_bytes)
+        except Exception as e:
+            print(f"[WARN] RSS fetch failed for {cfg.label}: {query} -> {e}", file=sys.stderr)
+            continue
+
+        for item in items:
+            if not is_relevant(item, cfg):
+                continue
+
+            dedup_key = normalize_for_dedup(item["title"])
+            if dedup_key in seen_keys:
+                continue
+
+            seen_keys.add(dedup_key)
+            item["label"] = cfg.label
+            collected.append(item)
+
+        # 念のため連続アクセスを少し避ける
+        time.sleep(0.3)
+
+    collected.sort(
+        key=lambda x: (
+            score_item(x, cfg),
+            x.get("publishedAt", "")
+        ),
+        reverse=True,
+    )
+
+    return collected[: cfg.max_items]
+
+
+def merge_and_sort(all_category_articles: list[list[dict]]) -> list[dict]:
+    merged: list[dict] = []
+    seen: set[tuple[str, str]] = set()
+
+    for articles in all_category_articles:
+        for item in articles:
+            key = (
+                item.get("label", ""),
+                normalize_for_dedup(item.get("title", "")),
+            )
+            if key in seen:
+                continue
+            seen.add(key)
+            merged.append(item)
+
+    merged.sort(key=lambda x: x.get("publishedAt", ""), reverse=True)
+    return merged
+
+
+def build_output() -> dict:
+    all_category_articles: list[list[dict]] = []
+
+    for cfg in CATEGORY_CONFIGS:
+        articles = fetch_category_articles(cfg)
+        all_category_articles.append(articles)
+
+    merged_articles = merge_and_sort(all_category_articles)
+
+    updated = datetime.now(JST).strftime("%Y-%m-%d %H:%M JST")
+
+    return {
+        "updated": updated,
+        "articles": merged_articles,
     }
-  ]
-}
+
+
+def save_output(data: dict, output_file: Path) -> None:
+    output_file.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2),
+        encoding="utf-8"
+    )
+
+
+def main() -> int:
+    try:
+        data = build_output()
+        save_output(data, OUTPUT_FILE)
+        print(f"[OK] news.json updated: {len(data.get('articles', []))} articles")
+        return 0
+    except Exception as e:
+        print(f"[ERROR] failed to build news.json: {e}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
