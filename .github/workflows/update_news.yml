@@ -1,34 +1,33 @@
 name: Update News Daily
 
 on:
-  schedule:
-    - cron: '0 22 * * *'  # 毎日 日本時間 7:00 (UTC 22:00)
   workflow_dispatch:
+  schedule:
+    - cron: "0 22 * * *"  # 毎朝7時（日本時間）
 
 jobs:
   update-news:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.11"
 
-      - name: Install dependencies
-        run: pip install requests
-
-      - name: Fetch news and generate news.json
-        env:
-          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+      - name: Run script
         run: python scripts/fetch_news.py
 
-      - name: Commit and push news.json
+      - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add news.json
-          git diff --cached --quiet || git commit -m "Update news.json"
+          git commit -m "Update news.json" || echo "No changes"
           git push
