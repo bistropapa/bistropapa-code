@@ -33,10 +33,6 @@ NOISE_KEYWORDS = [
     "地域おこし協力隊", "ふるさと納税", "会計年度任用職員", "公民館",
 ]
 
-NOISE_SOURCES = [
-    "pr times tv",  # 誤検知予防で限定
-]
-
 BUSINESS_TAG_LABELS = {
     "health_management": "健康経営",
     "online_cooking": "オンライン料理教室",
@@ -71,7 +67,6 @@ def strip_html(text):
     return text
 
 def extract_source_from_title(title):
-    # Google News RSS は「記事タイトル - ソース名」形式が多い
     if " - " in title:
         parts = title.rsplit(" - ", 1)
         if len(parts) == 2:
@@ -82,7 +77,7 @@ def detect_subcategory(text):
     t = text.lower()
     if any(k in t for k in ["新商品", "発売", "新発売", "販売開始"]):
         return "新商品"
-    if any(k in t for k in ["調査", "アンケート", "調べ", "分析", "レポート"]):
+    if any(k in t for k in ["調査", "アンケート", "分析", "レポート"]):
         return "調査"
     if any(k in t for k in ["レシピ", "料理", "献立", "食材"]):
         return "レシピ・料理"
@@ -98,74 +93,79 @@ def detect_subcategory(text):
         return "企業動向"
     return "話題"
 
-def assign_business_tags(title, description, category, source):
-    text = f"{title} {description} {category} {source}".lower()
+def assign_business_tags(title, description, category, source, subcategory):
+    text = f"{title} {description} {category} {source} {subcategory}".lower()
     tags = []
 
     def add(tag):
         if tag not in tags:
             tags.append(tag)
 
-    # 健康経営
+    # 事業タグ判定
     if any(k in text for k in [
         "健康経営", "ウェルビーイング", "wellbeing", "well-being",
         "従業員健康", "健康支援", "福利厚生", "メンタルヘルス", "栄養"
     ]):
         add("health_management")
 
-    # オンライン料理教室
     if any(k in text for k in [
         "オンライン", "動画講座", "ライブ配信", "zoom", "料理教室", "クッキングスクール", "講座"
     ]):
         add("online_cooking")
 
-    # AI活用
     if any(k in text for k in [
         "ai", "人工知能", "生成ai", "chatgpt", "llm", "dx", "自動化", "業務効率化"
     ]):
         add("ai_utilization")
 
-    # 食育
     if any(k in text for k in [
         "食育", "教育", "学校給食", "学習", "子ども向け", "親子体験", "栄養教育"
     ]):
         add("food_education")
 
-    # 共食・家庭
     if any(k in text for k in [
         "家族", "家庭", "共食", "団らん", "パパ", "子育て", "育児", "親子"
     ]):
         add("family_communication")
 
-    # レシピ活用
     if any(k in text for k in [
         "レシピ", "献立", "料理", "時短", "作り置き", "食材", "調理"
     ]):
         add("recipe_business")
 
-    # 企業研修
     if any(k in text for k in [
         "企業研修", "研修", "社員教育", "人材育成", "セミナー", "法人向け", "導入事例"
     ]):
         add("corporate_training")
 
-    # 発信ネタ
     if any(k in text for k in [
         "トレンド", "話題", "注目", "ランキング", "調査", "分析", "新商品", "新サービス"
     ]):
         add("content_marketing")
 
-    # 商品開発
     if any(k in text for k in [
         "新商品", "商品開発", "共同開発", "発売", "開発", "リニューアル", "メニュー開発"
     ]):
         add("product_development")
 
-    # コミュニティ
     if any(k in text for k in [
         "コミュニティ", "イベント", "参加型", "交流", "会員", "ファン", "地域連携"
     ]):
         add("community")
+
+    # カテゴリ別の最低保証タグ
+    if not tags:
+        if category == "AI・テクノロジー":
+            add("ai_utilization")
+            add("content_marketing")
+        elif category == "料理・食":
+            add("recipe_business")
+            add("content_marketing")
+        elif category == "パパ・育児":
+            add("family_communication")
+            add("food_education")
+        else:
+            add("content_marketing")
 
     return tags
 
@@ -181,7 +181,6 @@ def summarize(title, description, category, subcategory, business_tags):
     if len(summary) < 25:
         summary = f"{subcategory}に関する話題。{category}分野で注目されるニュースです。"
 
-    # 事業視点を少し足す
     if business_tags:
         labels = [BUSINESS_TAG_LABELS[t] for t in business_tags if t in BUSINESS_TAG_LABELS]
         summary += f"／事業視点: {', '.join(labels[:3])}"
@@ -190,15 +189,9 @@ def summarize(title, description, category, subcategory, business_tags):
 
 def is_noise(title, description, source):
     text = f"{title} {description} {source}".lower()
-
     for kw in NOISE_KEYWORDS:
         if kw.lower() in text:
             return True
-
-    for ns in NOISE_SOURCES:
-        if ns in text:
-            return True
-
     return False
 
 def parse_pubdate(pubdate):
@@ -213,10 +206,9 @@ def parse_pubdate(pubdate):
         return pubdate
 
 def item_link(item):
-    for tag in ["link"]:
-        node = item.find(tag)
-        if node is not None and node.text:
-            return node.text.strip()
+    node = item.find("link")
+    if node is not None and node.text:
+        return node.text.strip()
     return ""
 
 def item_text(item, tag_name):
@@ -244,7 +236,8 @@ def fetch_feed(feed_url, category):
 
         text_for_detect = f"{title} {description}"
         subcategory = detect_subcategory(text_for_detect)
-        business_tags = assign_business_tags(title, description, category, source)
+        business_tags = assign_business_tags(title, description, category, source, subcategory)
+        business_tag_labels = [BUSINESS_TAG_LABELS[t] for t in business_tags if t in BUSINESS_TAG_LABELS]
         summary = summarize(title, description, category, subcategory, business_tags)
 
         results.append({
@@ -254,7 +247,7 @@ def fetch_feed(feed_url, category):
             "subcategory": subcategory,
             "summary": summary,
             "business_tags": business_tags,
-            "business_tag_labels": [BUSINESS_TAG_LABELS[t] for t in business_tags if t in BUSINESS_TAG_LABELS],
+            "business_tag_labels": business_tag_labels,
             "published": parse_pubdate(pubdate_raw),
             "link": link,
         })
@@ -264,17 +257,12 @@ def fetch_feed(feed_url, category):
 def dedupe_articles(items):
     seen = set()
     deduped = []
-
     for item in items:
-        key = (
-            item["title"].strip().lower(),
-            item["source"].strip().lower(),
-        )
+        key = (item["title"].strip().lower(), item["source"].strip().lower())
         if key in seen:
             continue
         seen.add(key)
         deduped.append(item)
-
     return deduped
 
 def main():
@@ -289,8 +277,6 @@ def main():
                 print(f"Feed fetch failed: {feed_url} / {e}")
 
     all_articles = dedupe_articles(all_articles)
-
-    # 日付降順っぽく並べる（文字列なので完全ではないが実用十分）
     all_articles.sort(key=lambda x: x.get("published", ""), reverse=True)
 
     data = {
