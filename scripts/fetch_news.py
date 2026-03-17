@@ -34,18 +34,18 @@ def parse_rss(xml):
 
 def main():
     queries = [
-        "料理 レシピ 食育",
-        "育児 パパ 子育て",
-        "AI ChatGPT DX"
+        {"label": "料理・食", "q": "料理 レシピ 食育"},
+        {"label": "パパ・育児", "q": "育児 パパ 子育て"},
+        {"label": "AI・テクノロジー", "q": "AI ChatGPT DX"}
     ]
 
     all_articles = []
 
     for q in queries:
-        xml = fetch_rss(q)
+        xml = fetch_rss(q["q"])
         items = parse_rss(xml)
         for item in items:
-            item["label"] = q
+            item["label"] = q["label"]
             all_articles.append(item)
         time.sleep(1)
 
