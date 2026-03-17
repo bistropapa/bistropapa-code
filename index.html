@@ -12,44 +12,37 @@
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       line-height:1.6;
     }
-
     .wrap{
       max-width:1200px;
       margin:0 auto;
       padding:24px 16px 60px;
     }
-
     h1{
       margin:0 0 8px;
       color:#f59e0b;
       font-size:32px;
     }
-
     .lead{
       color:#d1d5db;
       margin-bottom:8px;
     }
-
     .meta{
       color:#9ca3af;
       font-size:14px;
       margin-bottom:24px;
     }
-
     .section-title{
       margin:28px 0 12px;
       color:#fbbf24;
       font-size:18px;
       font-weight:700;
     }
-
     .toolbar{
       display:flex;
       flex-wrap:wrap;
       gap:10px;
       margin-bottom:18px;
     }
-
     .tab, .filter-chip{
       border:1px solid #333;
       color:#fff;
@@ -60,47 +53,37 @@
       font-size:14px;
       transition:all .2s ease;
     }
-
     .tab:hover, .filter-chip:hover{
       border-color:#f59e0b;
       color:#f59e0b;
     }
-
     .tab.active, .filter-chip.active{
       background:#f59e0b;
       color:#111;
       border-color:#f59e0b;
       font-weight:700;
     }
-
     .top-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:12px;
     }
-
     @media(max-width:900px){
-      .top-grid{
-        grid-template-columns:1fr;
-      }
+      .top-grid{ grid-template-columns:1fr; }
     }
-
     .card{
       border:1px solid #2a2a2a;
       background:#0b0b0b;
       border-radius:16px;
       padding:16px;
       margin-bottom:14px;
-      box-shadow:0 0 0 rgba(0,0,0,0);
     }
-
     .mini-card{
       border:1px solid #2a2a2a;
       background:#0b0b0b;
       border-radius:14px;
       padding:14px;
     }
-
     .row-top{
       display:flex;
       justify-content:space-between;
@@ -109,13 +92,11 @@
       margin-bottom:10px;
       flex-wrap:wrap;
     }
-
     .tag-group{
       display:flex;
       flex-wrap:wrap;
       gap:8px;
     }
-
     .tag{
       display:inline-flex;
       align-items:center;
@@ -127,73 +108,61 @@
       border:1px solid transparent;
       white-space:nowrap;
     }
-
     .tag.category-food{
       background:rgba(245,158,11,.16);
       color:#fbbf24;
       border-color:rgba(245,158,11,.35);
     }
-
     .tag.category-family{
       background:rgba(59,130,246,.16);
       color:#93c5fd;
       border-color:rgba(59,130,246,.35);
     }
-
     .tag.category-ai{
       background:rgba(16,185,129,.16);
       color:#6ee7b7;
       border-color:rgba(16,185,129,.35);
     }
-
     .tag.sub{
       background:#161616;
       color:#d1d5db;
       border-color:#2f2f2f;
     }
-
     .tag.biz{
       background:#1a1a1a;
       color:#fca5a5;
       border-color:#3b2a2a;
     }
-
     .source{
       color:#d1d5db;
       font-size:13px;
       font-weight:700;
       white-space:nowrap;
     }
-
     .title{
       font-size:22px;
       font-weight:700;
       line-height:1.45;
       margin:6px 0 10px;
     }
-
     .title a{
       color:#fff;
       text-decoration:none;
     }
-
     .title a:hover{
       color:#f59e0b;
     }
-
     .summary{
       color:#d1d5db;
       font-size:15px;
       margin-bottom:12px;
     }
-
     .biz-row{
       display:flex;
       flex-wrap:wrap;
       gap:8px;
       margin:10px 0 12px;
     }
-
     .meta-row{
       display:flex;
       justify-content:space-between;
@@ -204,24 +173,20 @@
       font-size:13px;
       margin-top:8px;
     }
-
     .read-link{
       color:#fff;
       text-decoration:none;
       border-bottom:1px solid #555;
     }
-
     .read-link:hover{
       color:#f59e0b;
       border-color:#f59e0b;
     }
-
     .count{
       color:#9ca3af;
       margin:8px 0 20px;
       font-size:14px;
     }
-
     .empty{
       border:1px dashed #333;
       border-radius:14px;
@@ -230,18 +195,15 @@
       text-align:center;
       margin-top:16px;
     }
-
     .mini-title{
       font-weight:700;
       margin-bottom:8px;
       color:#fff;
     }
-
     .mini-text{
       color:#d1d5db;
       font-size:14px;
     }
-
     .footer-note{
       color:#6b7280;
       font-size:12px;
@@ -295,7 +257,7 @@
     let activeBusinessTag = "すべて";
 
     function escapeHtml(str = "") {
-      return str
+      return String(str)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
@@ -308,6 +270,18 @@
       if (category === "パパ・育児") return "category-family";
       if (category === "AI・テクノロジー") return "category-ai";
       return "";
+    }
+
+    function setCategory(category) {
+      activeCategory = category;
+      buildCategoryTabs();
+      renderAll();
+    }
+
+    function setBusinessTag(tag) {
+      activeBusinessTag = tag;
+      buildBusinessFilters();
+      renderAll();
     }
 
     function buildCategoryTabs() {
@@ -324,24 +298,23 @@
       `).join("");
     }
 
-    function setCategory(category) {
-      activeCategory = category;
-      buildCategoryTabs();
-      renderAll();
-    }
+    function normalizeBusinessLabels(article) {
+      if (Array.isArray(article.business_tag_labels) && article.business_tag_labels.length > 0) {
+        return article.business_tag_labels;
+      }
 
-    function setBusinessTag(tag) {
-      activeBusinessTag = tag;
-      buildBusinessFilters();
-      renderAll();
+      // 念のためフォールバック
+      if (article.category === "AI・テクノロジー") return ["AI活用", "発信ネタ"];
+      if (article.category === "料理・食") return ["レシピ活用", "発信ネタ"];
+      if (article.category === "パパ・育児") return ["共食・家庭", "食育"];
+      return ["発信ネタ"];
     }
 
     function filterArticles() {
       return allArticles.filter(article => {
+        const labels = normalizeBusinessLabels(article);
         const categoryMatch = activeCategory === "すべて" || article.category === activeCategory;
-        const businessMatch =
-          activeBusinessTag === "すべて" ||
-          (article.business_tag_labels || []).includes(activeBusinessTag);
+        const businessMatch = activeBusinessTag === "すべて" || labels.includes(activeBusinessTag);
         return categoryMatch && businessMatch;
       });
     }
@@ -378,42 +351,40 @@
         return;
       }
 
-      list.innerHTML = filtered.map(item => `
-        <div class="card">
-          <div class="row-top">
-            <div class="tag-group">
-              <span class="tag ${getCategoryClass(item.category)}">${escapeHtml(item.category || "")}</span>
-              <span class="tag sub">${escapeHtml(item.subcategory || "話題")}</span>
+      list.innerHTML = filtered.map(item => {
+        const labels = normalizeBusinessLabels(item);
+
+        return `
+          <div class="card">
+            <div class="row-top">
+              <div class="tag-group">
+                <span class="tag ${getCategoryClass(item.category)}">${escapeHtml(item.category || "")}</span>
+                <span class="tag sub">${escapeHtml(item.subcategory || "話題")}</span>
+              </div>
+              <div class="source">${escapeHtml(item.source || "不明")}</div>
             </div>
-            <div class="source">${escapeHtml(item.source || "不明")}</div>
-          </div>
 
-          <div class="title">
-            <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
-              ${escapeHtml(item.title || "")}
-            </a>
-          </div>
+            <div class="title">
+              <a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+                ${escapeHtml(item.title || "")}
+              </a>
+            </div>
 
-          <div class="summary">${escapeHtml(item.summary || "")}</div>
+            <div class="summary">${escapeHtml(item.summary || "")}</div>
 
-          ${
-            item.business_tag_labels && item.business_tag_labels.length
-              ? `<div class="biz-row">
-                  ${item.business_tag_labels.map(tag => `
-                    <span class="tag biz">${escapeHtml(tag)}</span>
-                  `).join("")}
-                 </div>`
-              : ``
-          }
+            <div class="biz-row">
+              ${labels.map(tag => `<span class="tag biz">${escapeHtml(tag)}</span>`).join("")}
+            </div>
 
-          <div class="meta-row">
-            <div>${escapeHtml(item.published || "")}</div>
-            <div>
-              <a class="read-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">記事を読む</a>
+            <div class="meta-row">
+              <div>${escapeHtml(item.published || "")}</div>
+              <div>
+                <a class="read-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">記事を読む</a>
+              </div>
             </div>
           </div>
-        </div>
-      `).join("");
+        `;
+      }).join("");
     }
 
     function renderAll() {
