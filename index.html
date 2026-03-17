@@ -73,6 +73,25 @@
       color:#fbbf24;
       font-size:18px;
     }
+    .section-title{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      border-radius:18px;
+      padding:18px 20px;
+      margin-bottom:20px;
+    }
+    .section-title h2{
+      margin:0;
+      color:var(--accent);
+      font-size:28px;
+    }
+    .count{
+      color:#fbbf24;
+      font-size:18px;
+    }
     .tabs{
       display:flex;
       gap:12px;
@@ -92,25 +111,6 @@
     .tab.active{
       background:linear-gradient(90deg,#d97706,#f59e0b);
       color:#fff;
-    }
-    .section-title{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.02);
-      border-radius:18px;
-      padding:18px 20px;
-      margin-bottom:20px;
-    }
-    .section-title h2{
-      margin:0;
-      color:var(--accent);
-      font-size:28px;
-    }
-    .count{
-      color:#fbbf24;
-      font-size:18px;
     }
     .list{
       display:grid;
@@ -153,6 +153,40 @@
       font-size:22px;
     }
     .error{ color:#f87171; }
+    .top-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+      margin-bottom:28px;
+    }
+    .top-card{
+      border:1px solid #6b3e00;
+      border-radius:18px;
+      padding:18px 20px;
+      background:linear-gradient(180deg,rgba(245,158,11,.10),rgba(255,255,255,.02));
+    }
+    .top-rank{
+      color:#fbbf24;
+      font-size:14px;
+      font-weight:700;
+      margin-bottom:8px;
+    }
+    .top-headline{
+      color:#fff;
+      text-decoration:none;
+      font-size:20px;
+      font-weight:700;
+      line-height:1.5;
+      display:block;
+      margin-bottom:10px;
+    }
+    .top-headline:hover{
+      color:#fbbf24;
+    }
+    .top-source{
+      color:#fde68a;
+      font-size:13px;
+    }
     @media (max-width: 900px){
       .hero{
         grid-template-columns:1fr;
@@ -162,6 +196,12 @@
       .date{font-size:22px}
       .headline{font-size:19px}
       .tab{font-size:16px;padding:12px 16px}
+      .top-grid{
+        grid-template-columns:1fr;
+      }
+      .top-headline{
+        font-size:18px;
+      }
     }
   </style>
 </head>
@@ -179,6 +219,12 @@
         <div class="meta">最終更新: <span id="updated">読み込み中...</span></div>
       </div>
     </div>
+
+    <div class="section-title">
+      <h2>🔥 今日の注目3本</h2>
+      <div class="count">毎朝ピックアップ</div>
+    </div>
+    <div id="top-news" class="top-grid"></div>
 
     <div class="tabs">
       <button class="tab active" data-label="料理・食">料理・食</button>
@@ -208,6 +254,39 @@
     }
     setInterval(updateClock,1000);
     updateClock();
+
+    function escapeHtml(str){
+      return String(str)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
+
+    function escapeAttr(str){
+      return escapeHtml(str);
+    }
+
+    function renderTopNews(){
+      const root = document.getElementById("top-news");
+      const top = NEWS_DATA.slice(0, 3);
+
+      if(!top.length){
+        root.innerHTML = `<div class="empty">注目記事はありません</div>`;
+        return;
+      }
+
+      root.innerHTML = top.map((item, idx) => `
+        <div class="top-card">
+          <div class="top-rank">注目 ${idx + 1}</div>
+          <a class="top-headline" href="${escapeAttr(item.url || "#")}" target="_blank" rel="noopener noreferrer">
+            ${escapeHtml(item.title || "(no title)")}
+          </a>
+          <div class="top-source">${escapeHtml(item.source || "")} ／ ${escapeHtml(item.label || "")}</div>
+        </div>
+      `).join("");
+    }
 
     function renderList(label){
       CURRENT_LABEL = label;
@@ -241,19 +320,6 @@
       `).join("");
     }
 
-    function escapeHtml(str){
-      return String(str)
-        .replaceAll("&","&amp;")
-        .replaceAll("<","&lt;")
-        .replaceAll(">","&gt;")
-        .replaceAll('"',"&quot;")
-        .replaceAll("'","&#039;");
-    }
-
-    function escapeAttr(str){
-      return escapeHtml(str);
-    }
-
     async function loadNews(){
       const updated = document.getElementById("updated");
       const root = document.getElementById("news-root");
@@ -266,10 +332,12 @@
         NEWS_DATA = Array.isArray(data.articles) ? data.articles : [];
         updated.textContent = data.updated || "不明";
 
+        renderTopNews();
         renderList(CURRENT_LABEL);
       }catch(err){
         updated.textContent = "取得失敗";
         root.innerHTML = `<div class="error">ニュースの読み込みに失敗しました</div>`;
+        document.getElementById("top-news").innerHTML = "";
       }
     }
 
