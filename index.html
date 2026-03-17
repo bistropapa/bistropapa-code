@@ -1,73 +1,283 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>ビストロパパ朝ニュース</title>
-<style>
-body {
-  background:#0b0b0b;
-  color:#fff;
-  font-family:sans-serif;
-  padding:20px;
-}
-h1 { color:#f59e0b; }
-.section {
-  margin-top:30px;
-}
-.card {
-  border-bottom:1px solid #333;
-  padding:10px 0;
-}
-a { color:#fbbf24; text-decoration:none; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ビストロパパ朝ニュース</title>
+  <style>
+    :root{
+      --bg:#0c0702;
+      --panel:#18110a;
+      --line:#4b2d08;
+      --text:#fff7ed;
+      --muted:#fcd34d;
+      --accent:#f59e0b;
+      --accent2:#fb923c;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#050505 0%, #120800 100%);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    .wrap{
+      max-width:1400px;
+      margin:0 auto;
+      padding:24px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:24px;
+      align-items:start;
+      margin-bottom:24px;
+    }
+    .title{
+      font-size:20px;
+      color:var(--muted);
+      letter-spacing:.08em;
+      margin-bottom:8px;
+    }
+    h1{
+      margin:0 0 8px;
+      color:var(--accent);
+      font-size:48px;
+      line-height:1.1;
+    }
+    .sub{
+      color:#fde68a;
+      font-size:18px;
+    }
+    .info-panel{
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:24px;
+      background:rgba(255,255,255,.03);
+      text-align:right;
+    }
+    .clock{
+      font-size:56px;
+      font-weight:700;
+      color:#fff;
+      line-height:1;
+      margin-bottom:6px;
+    }
+    .date{
+      color:var(--muted);
+      font-weight:700;
+      font-size:28px;
+    }
+    .meta{
+      margin-top:16px;
+      color:#fbbf24;
+      font-size:18px;
+    }
+    .tabs{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin:24px 0 20px;
+    }
+    .tab{
+      border:1px solid #a16207;
+      background:transparent;
+      color:#fbbf24;
+      padding:14px 24px;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:20px;
+      font-weight:700;
+    }
+    .tab.active{
+      background:linear-gradient(90deg,#d97706,#f59e0b);
+      color:#fff;
+    }
+    .section-title{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      border-radius:18px;
+      padding:18px 20px;
+      margin-bottom:20px;
+    }
+    .section-title h2{
+      margin:0;
+      color:var(--accent);
+      font-size:28px;
+    }
+    .count{
+      color:#fbbf24;
+      font-size:18px;
+    }
+    .list{
+      display:grid;
+      gap:14px;
+    }
+    .card{
+      border:1px solid #3f2a0f;
+      border-radius:18px;
+      padding:18px 20px;
+      background:rgba(255,255,255,.025);
+    }
+    .source{
+      color:#fbbf24;
+      font-size:14px;
+      margin-bottom:8px;
+      font-weight:700;
+    }
+    .headline{
+      color:#fff7ed;
+      text-decoration:none;
+      font-size:24px;
+      line-height:1.5;
+      font-weight:700;
+      display:block;
+      margin-bottom:8px;
+    }
+    .headline:hover{
+      color:#fbbf24;
+    }
+    .meta-row{
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+      font-size:14px;
+      color:#fde68a;
+    }
+    .empty,.error{
+      padding:30px 0;
+      text-align:center;
+      font-size:22px;
+    }
+    .error{ color:#f87171; }
+    @media (max-width: 900px){
+      .hero{
+        grid-template-columns:1fr;
+      }
+      h1{font-size:36px}
+      .clock{font-size:42px}
+      .date{font-size:22px}
+      .headline{font-size:19px}
+      .tab{font-size:16px;padding:12px 16px}
+    }
+  </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <div class="title">BISTRO PAPA MORNING NEWS</div>
+        <h1>ビストロパパ朝ニュース</h1>
+        <div class="sub">料理・食／パパ・育児／AI・テクノロジーをタブ切替で確認</div>
+      </div>
+      <div class="info-panel">
+        <div class="clock" id="clock">--:--:--</div>
+        <div class="date" id="date">----</div>
+        <div class="meta">最終更新: <span id="updated">読み込み中...</span></div>
+      </div>
+    </div>
 
-<h1>ビストロパパ朝ニュース</h1>
-<div id="updated"></div>
+    <div class="tabs">
+      <button class="tab active" data-label="料理・食">料理・食</button>
+      <button class="tab" data-label="パパ・育児">パパ・育児</button>
+      <button class="tab" data-label="AI・テクノロジー">AI・テクノロジー</button>
+    </div>
 
-<div id="news"></div>
+    <div class="section-title">
+      <h2 id="current-label">料理・食</h2>
+      <div class="count" id="count-text">0件</div>
+    </div>
 
-<script>
-async function loadNews(){
-  const res = await fetch("news.json?ts=" + Date.now());
-  const data = await res.json();
+    <div id="news-root" class="list"></div>
+  </div>
 
-  document.getElementById("updated").innerText =
-    "最終更新: " + data.updated;
+  <script>
+    let NEWS_DATA = [];
+    let CURRENT_LABEL = "料理・食";
 
-  const grouped = {};
+    function updateClock(){
+      const now = new Date();
+      const pad = n => String(n).padStart(2,"0");
+      document.getElementById("clock").textContent =
+        `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
+      document.getElementById("date").textContent =
+        `${now.getFullYear()}年${now.getMonth()+1}月${now.getDate()}日`;
+    }
+    setInterval(updateClock,1000);
+    updateClock();
 
-  data.articles.forEach(a => {
-    if(!grouped[a.label]) grouped[a.label] = [];
-    grouped[a.label].push(a);
-  });
+    function renderList(label){
+      CURRENT_LABEL = label;
+      document.getElementById("current-label").textContent = label;
 
-  const root = document.getElementById("news");
-  root.innerHTML = "";
+      document.querySelectorAll(".tab").forEach(btn=>{
+        btn.classList.toggle("active", btn.dataset.label === label);
+      });
 
-  Object.keys(grouped).forEach(label => {
-    const section = document.createElement("div");
-    section.className = "section";
+      const root = document.getElementById("news-root");
+      const filtered = NEWS_DATA.filter(x => x.label === label);
 
-    const title = document.createElement("h2");
-    title.innerText = label;
-    section.appendChild(title);
+      document.getElementById("count-text").textContent = `${filtered.length}件`;
 
-    grouped[label].forEach(a => {
-      const div = document.createElement("div");
-      div.className = "card";
-      div.innerHTML = `<a href="${a.url}" target="_blank">${a.title}</a>`;
-      section.appendChild(div);
+      if(!filtered.length){
+        root.innerHTML = `<div class="empty">記事がありません</div>`;
+        return;
+      }
+
+      root.innerHTML = filtered.map(item => `
+        <div class="card">
+          <div class="source">${escapeHtml(item.source || "")}</div>
+          <a class="headline" href="${escapeAttr(item.url || "#")}" target="_blank" rel="noopener noreferrer">
+            ${escapeHtml(item.title || "(no title)")}
+          </a>
+          <div class="meta-row">
+            <div>カテゴリ: ${escapeHtml(item.label || "")}</div>
+            <div>公開: ${escapeHtml(item.publishedAt || "不明")}</div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function escapeHtml(str){
+      return String(str)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
+
+    function escapeAttr(str){
+      return escapeHtml(str);
+    }
+
+    async function loadNews(){
+      const updated = document.getElementById("updated");
+      const root = document.getElementById("news-root");
+
+      try{
+        const res = await fetch("./news.json?ts=" + Date.now(), { cache: "no-store" });
+        if(!res.ok) throw new Error(`HTTP ${res.status}`);
+
+        const data = await res.json();
+        NEWS_DATA = Array.isArray(data.articles) ? data.articles : [];
+        updated.textContent = data.updated || "不明";
+
+        renderList(CURRENT_LABEL);
+      }catch(err){
+        updated.textContent = "取得失敗";
+        root.innerHTML = `<div class="error">ニュースの読み込みに失敗しました</div>`;
+      }
+    }
+
+    document.querySelectorAll(".tab").forEach(btn=>{
+      btn.addEventListener("click", ()=> renderList(btn.dataset.label));
     });
 
-    root.appendChild(section);
-  });
-}
-
-loadNews();
-</script>
-
+    loadNews();
+  </script>
 </body>
 </html>
