@@ -1,54 +1,60 @@
-import os
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import json
-import requests
-from datetime import datetime, timezone, timedelta
+import time
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
+from datetime import datetime
+from pathlib import Path
 
-API_KEY = os.environ.get("NEWS_API_KEY", "")
-JST = timezone(timedelta(hours=9))
+OUTPUT_FILE = Path("news.json")
 
-QUERIES = [
-    {"label": "料理・食", "q": "料理 OR 食卓 OR レシピ OR 食育", "lang": "jp"},
-    {"label": "パパ・育児", "q": "パパ料理 OR 父親 育児 OR イクメン", "lang": "jp"},
-    {"label": "AI・テクノロジー", "q": "AI 料理 OR フードテック OR 食品テクノロジー", "lang": "jp"},
-]
+def fetch_rss(query):
+    url = f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}&hl=ja&gl=JP&ceid=JP:ja"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req) as res:
+        return res.read()
 
-results = []
+def parse_rss(xml):
+    root = ET.fromstring(xml)
+    items = []
+    for item in root.findall(".//item")[:5]:
+        title = item.findtext("title", "")
+        link = item.findtext("link", "")
+        source = item.findtext("source", "")
+        items.append({
+            "title": title,
+            "url": link,
+            "source": source,
+            "publishedAt": ""
+        })
+    return items
 
-for item in QUERIES:
-    url = "https://newsapi.org/v2/everything"
-    params = {
-        "q": item["q"],
-        "language": "jp",
-        "sortBy": "publishedAt",
-        "pageSize": 5,
-        "apiKey": API_KEY,
+def main():
+    queries = [
+        "料理 レシピ 食育",
+        "育児 パパ 子育て",
+        "AI ChatGPT DX"
+    ]
+
+    all_articles = []
+
+    for q in queries:
+        xml = fetch_rss(q)
+        items = parse_rss(xml)
+        for item in items:
+            item["label"] = q
+            all_articles.append(item)
+        time.sleep(1)
+
+    data = {
+        "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "articles": all_articles
     }
-    try:
-        resp = requests.get(url, params=params, timeout=10)
-        data = resp.json()
-        articles = data.get("articles", [])
-        for a in articles:
-            title = a.get("title") or ""
-            url_a = a.get("url") or ""
-            source = (a.get("source") or {}).get("name") or ""
-            published = a.get("publishedAt") or ""
-            if title and url_a:
-                results.append({
-                    "label": item["label"],
-                    "title": title,
-                    "url": url_a,
-                    "source": source,
-                    "publishedAt": published,
-                })
-    except Exception as e:
-        print(f"Error fetching {item['label']}: {e}")
 
-output = {
-    "updated": datetime.now(JST).strftime("%Y-%m-%d %H:%M JST"),
-    "articles": results,
-}
+    OUTPUT_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2))
 
-with open("news.json", "w", encoding="utf-8") as f:
-    json.dump(output, f, ensure_ascii=False, indent=2)
-
-print(f"Done. {len(results)} articles saved.")
+if __name__ == "__main__":
+    main()
