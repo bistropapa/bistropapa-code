@@ -3,7 +3,7 @@ name: Update News Daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 22 * * *"  # 毎朝7時（日本時間）
+    - cron: "0 22 * * *"  # 日本時間 7:00
 
 jobs:
   update-news:
@@ -15,19 +15,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Run script
-        run: python scripts/fetch_news.py
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
 
-      - name: Commit and push
+      - name: Fetch news and generate news.json
+        run: |
+          python scripts/fetch_news.py
+
+      - name: Commit and push news.json
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add news.json
-          git commit -m "Update news.json" || echo "No changes"
-          git push
+          git commit -m "Update news.json" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push origin main
