@@ -1,0 +1,28 @@
+{
+  "anthropic_api_key": "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",
+  "canva_api_key": "",
+  "output_folder": "C:\\Users\\takim\\Desktop\\bistropapa_output",
+  "templates": {
+    "横": [
+      {
+        "name": "BistroPapa横クレジット13",
+        "design_id": "DAG82rf3QdU",
+        "count": 0
+      }
+    ],
+    "縦": [
+      {
+        "name": "BistroPapaクレジット縦9",
+        "design_id": "DAHBJ3vaBZs",
+        "count": 0
+      }
+    ]
+  },
+  "blur_threshold": 100,
+  "brightness_min": 40,
+  "brightness_max": 220,
+  "step0_base_folder": "C:\\Users\\takim\\OneDrive\\画像\\カメラのインポート",
+  "step1_save_folder": "C:\\Users\\takim\\Desktop\\bistropapa_step1",
+  "step2_output_folder": "C:\\Users\\takim\\OneDrive\\画像\\ブログフォト\\2026ブログ写真",
+  "step2_save_folder": "C:\\Users\\takim\\OneDrive\\画像\\ブログフォト\\2026ブログ写真\\2603"
+}

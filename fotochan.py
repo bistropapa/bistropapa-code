@@ -1099,6 +1099,7 @@ class GroupingWindow:
         pre_rot = rotations or {}
         self.image_states = {i: {"dish": ai or "", "rotation": pre_rot.get(i, 0)}
                              for i, (p, s, ai) in enumerate(selected)}
+        self.history = []  # 料理名適用の履歴（1つ戻す用）
         self.sel_idx = set()
         self.thumb_refs = {}
         self.thumb_lbls = {}
@@ -1197,6 +1198,9 @@ class GroupingWindow:
         tk.Button(sr, text="全解除", command=self._deselect_all,
                   bg="#34495E", fg="white", font=("Meiryo", 8),
                   relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=2)
+        tk.Button(sr, text="↩ 1つ戻す", command=self._undo_last_apply,
+                  bg="#34495E", fg="white", font=("Meiryo", 8),
+                  relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=2)
 
         # 保存
         tk.Button(self.win, text="💾  保存する", command=self._save,
@@ -1257,7 +1261,10 @@ class GroupingWindow:
             messagebox.showwarning("確認", "写真を選択してから適用してください", parent=self.win)
             return
         applied = list(self.sel_idx)
+        changed_before = {}
         for j in applied:
+            if self.image_states[j]["dish"] != name:
+                changed_before[j] = self.image_states[j]["dish"]
             self.image_states[j]["dish"] = name
             self._refresh(j)
         self.sel_idx.clear()
@@ -1274,11 +1281,27 @@ class GroupingWindow:
                 parent=self.win)
             if ans:
                 for j in unnamed_similar:
+                    if self.image_states[j]["dish"] != name:
+                        changed_before[j] = self.image_states[j]["dish"]
                     self.image_states[j]["dish"] = name
                     self._refresh(j)
+                if changed_before:
+                    self.history.append(changed_before)
                 self.sel_lv.set(f"✅ 計{len(applied)+len(unnamed_similar)}枚に「{name}」を設定しました")
                 return
+        if changed_before:
+            self.history.append(changed_before)
         self.sel_lv.set("✅ 適用しました！次のグループを選択してください")
+
+    def _undo_last_apply(self):
+        if not self.history:
+            messagebox.showinfo("確認", "取り消せる適用履歴がありません。", parent=self.win)
+            return
+        prev_states = self.history.pop()
+        for idx, prev_dish in prev_states.items():
+            self.image_states[idx]["dish"] = prev_dish
+            self._refresh(idx)
+        self.sel_lv.set("↩ 直前の適用を取り消しました")
 
     def _find_similar(self, applied_indices, threshold=0.85):
         """適用済み写真と色ヒストグラムが近い未設定写真を返す"""
