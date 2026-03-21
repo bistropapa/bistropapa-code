@@ -379,6 +379,7 @@ class Step0App:
         self.current_images = []
         self.current_index = 0
         self.photo_tk = None
+        self.dish_history = []  # サイドバー料理名適用のUNDO（全インデックスのdishスナップショット）
         self._build()
         self._bind_keys()
         # デフォルトSDフォルダを初期表示に反映
@@ -454,7 +455,17 @@ class Step0App:
         self.dish_entry_var = tk.StringVar()
         tk.Entry(left, textvariable=self.dish_entry_var,
                  font=("Meiryo", 11), bg="white", fg="#2C3E50").pack(fill=tk.X, pady=2)
-        self._btn(left, "✅ この名前を適用", self.apply_dish_name,   "#27AE60", bold=True)
+        dish_btn_row = tk.Frame(left, bg="#2C3E50")
+        dish_btn_row.pack(fill=tk.X, pady=2)
+        tk.Button(dish_btn_row, text="✅ この名前を適用", command=self.apply_dish_name,
+                  bg="#27AE60", fg="white", font=("Meiryo", 9, "bold"),
+                  relief=tk.FLAT, padx=8, pady=4).pack(side=tk.LEFT)
+        self.step0_undo_btn = tk.Button(
+            dish_btn_row, text="↩ 元に戻す", command=self._undo_step0_dish_apply,
+            bg="#7F8C8D", fg="white", font=("Meiryo", 9),
+            relief=tk.FLAT, padx=8, pady=4, state=tk.DISABLED,
+            disabledforeground="#555555")
+        self.step0_undo_btn.pack(side=tk.LEFT, padx=(6, 0))
         self._btn(left, "🔍 確認・変更",     self.process_selected,  "#8E44AD")
 
         # ── 処理実行 ──
@@ -534,7 +545,30 @@ class Step0App:
         self.root.bind("<Right>",  lambda e: self.next_image())
         self.root.bind("<r>",      lambda e: self.rotate_current())
         self.root.bind("<R>",      lambda e: self.rotate_current())
+        self.root.bind("<Control-z>", self._on_step0_ctrl_z)
+        self.root.bind("<Control-Z>", self._on_step0_ctrl_z)
         self.root.focus_set()
+
+    def _on_step0_ctrl_z(self, event=None):
+        self._undo_step0_dish_apply()
+        return "break"
+
+    def _update_step0_undo_btn(self):
+        if getattr(self, "step0_undo_btn", None):
+            self.step0_undo_btn.config(
+                state=tk.NORMAL if self.dish_history else tk.DISABLED)
+
+    def _undo_step0_dish_apply(self):
+        if not self.dish_history:
+            return
+        snap = self.dish_history.pop()
+        for i, old_ai in snap.items():
+            if 0 <= i < len(self.current_images):
+                p, s, _ = self.current_images[i]
+                self.current_images[i] = (p, s, old_ai)
+        self._update_status()
+        self._show_image()
+        self._update_step0_undo_btn()
 
     def log(self, msg):
         def _do():
@@ -669,6 +703,8 @@ class Step0App:
         self._rotations = {}
         self.current_images = [(f, "未選択", "") for f in all_files]
         self.current_index = 0
+        self.dish_history.clear()
+        self._update_step0_undo_btn()
         self._update_status()
         if self.current_images:
             self._show_image()
@@ -804,6 +840,8 @@ class Step0App:
         self.current_images = []
         self._rotations = {}
         self.current_index = 0
+        self.dish_history.clear()
+        self._update_step0_undo_btn()
         self._update_status()
         self.canvas.delete("all")
         self.img_info_var.set("写真を読み込んでください")
@@ -998,9 +1036,17 @@ class Step0App:
         entry = tk.Entry(ir, textvariable=dish_var, font=("Meiryo", 12), width=22)
         entry.pack(side=tk.LEFT, padx=4)
 
+        list_dish_history = []
+
+        def update_list_undo_btn():
+            list_undo_btn.config(
+                state=tk.NORMAL if list_dish_history else tk.DISABLED)
+
         def apply_name(event=None):
             name = dish_var.get().strip()
             if not name or not clicked: return
+            snap = {i: self.current_images[i][2] for i in range(len(self.current_images))}
+            list_dish_history.append(snap)
             for pos in list(clicked):
                 orig = sel_indices[pos]
                 p2, s2, _ = self.current_images[orig]
@@ -1009,11 +1055,34 @@ class Step0App:
             clicked.clear()
             dish_var.set("")
             sel_lv.set("✅ 適用しました！")
+            update_list_undo_btn()
+
+        def undo_list_apply(event=None):
+            if not list_dish_history:
+                return
+            snap = list_dish_history.pop()
+            for i, old_ai in snap.items():
+                if 0 <= i < len(self.current_images):
+                    p2, s2, _ = self.current_images[i]
+                    self.current_images[i] = (p2, s2, old_ai)
+            for pos in range(len(sel_indices)):
+                refresh(pos, sel_indices[pos])
+            sel_lv.set("↩ 料理名を元に戻しました")
+            update_list_undo_btn()
+            return "break"
 
         tk.Button(ir, text="✅ 適用", command=apply_name,
                   bg="#27AE60", fg="white", font=("Meiryo", 10, "bold"),
                   relief=tk.FLAT, padx=10).pack(side=tk.LEFT, padx=4)
+        list_undo_btn = tk.Button(
+            ir, text="↩ 元に戻す", command=undo_list_apply,
+            bg="#7F8C8D", fg="white", font=("Meiryo", 9),
+            relief=tk.FLAT, padx=10, state=tk.DISABLED,
+            disabledforeground="#555555")
+        list_undo_btn.pack(side=tk.LEFT, padx=4)
         entry.bind("<Return>", apply_name)
+        win.bind("<Control-z>", undo_list_apply)
+        win.bind("<Control-Z>", undo_list_apply)
 
         # 回転
         rr = tk.Frame(ctrl, bg="#2C3E50")
@@ -1056,11 +1125,14 @@ class Step0App:
             messagebox.showwarning("確認", "料理名を入力してください", parent=self.root)
             return
         if not self.current_images: return
+        snap = {i: self.current_images[i][2] for i in range(len(self.current_images))}
+        self.dish_history.append(snap)
         p, s, _ = self.current_images[self.current_index]
         self.current_images[self.current_index] = (p, "選択", name)
         self._update_status()
         self._show_image()
         self.log(f"✅ {p.name} → 料理名:「{name}」で選択")
+        self._update_step0_undo_btn()
         # 次の未選択画像に自動移動
         self.next_image()
 
@@ -1099,7 +1171,7 @@ class GroupingWindow:
         pre_rot = rotations or {}
         self.image_states = {i: {"dish": ai or "", "rotation": pre_rot.get(i, 0)}
                              for i, (p, s, ai) in enumerate(selected)}
-        self.history = []  # 料理名適用の履歴（1つ戻す用）
+        self.history = []  # 料理名適用前の全dishスナップショット（UNDOスタック）
         self.sel_idx = set()
         self.thumb_refs = {}
         self.thumb_lbls = {}
@@ -1175,9 +1247,17 @@ class GroupingWindow:
                   bg="#27AE60", fg="white", font=("Meiryo", 10, "bold"),
                   relief=tk.FLAT, padx=10).pack(side=tk.LEFT, padx=4)
         self.entry.bind("<Return>", lambda e: self._apply())
+        self.grouping_undo_btn = tk.Button(
+            ir, text="↩ 元に戻す", command=self._undo_grouping_dish,
+            bg="#7F8C8D", fg="white", font=("Meiryo", 9),
+            relief=tk.FLAT, padx=8, state=tk.DISABLED,
+            disabledforeground="#555555")
+        self.grouping_undo_btn.pack(side=tk.LEFT, padx=4)
         tk.Button(ir, text="全枚に適用", command=self._apply_all,
                   bg="#8E44AD", fg="white", font=("Meiryo", 9),
                   relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=4)
+        self.win.bind("<Control-z>", self._on_grouping_ctrl_z)
+        self.win.bind("<Control-Z>", self._on_grouping_ctrl_z)
 
         # 回転
         rr = tk.Frame(ctrl, bg="#2C3E50")
@@ -1198,14 +1278,35 @@ class GroupingWindow:
         tk.Button(sr, text="全解除", command=self._deselect_all,
                   bg="#34495E", fg="white", font=("Meiryo", 8),
                   relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=2)
-        tk.Button(sr, text="↩ 1つ戻す", command=self._undo_last_apply,
-                  bg="#34495E", fg="white", font=("Meiryo", 8),
-                  relief=tk.FLAT, padx=8).pack(side=tk.LEFT, padx=2)
 
         # 保存
         tk.Button(self.win, text="💾  保存する", command=self._save,
                   bg="#C41E3A", fg="white", font=("Meiryo", 12, "bold"),
                   relief=tk.FLAT, pady=9).pack(fill=tk.X, padx=8, pady=5)
+
+        self._update_grouping_undo_btn()
+
+    def _dish_snapshot_grouping(self):
+        return {i: self.image_states[i]["dish"] for i in self.image_states}
+
+    def _update_grouping_undo_btn(self):
+        if getattr(self, "grouping_undo_btn", None):
+            self.grouping_undo_btn.config(
+                state=tk.NORMAL if self.history else tk.DISABLED)
+
+    def _on_grouping_ctrl_z(self, event=None):
+        self._undo_grouping_dish()
+        return "break"
+
+    def _undo_grouping_dish(self):
+        if not self.history:
+            return
+        snap = self.history.pop()
+        for idx, prev_dish in snap.items():
+            self.image_states[idx]["dish"] = prev_dish
+            self._refresh(idx)
+        self.sel_lv.set("↩ 料理名を元に戻しました")
+        self._update_grouping_undo_btn()
 
     def _load_thumb(self, i):
         p, _, _ = self.selected[i]
@@ -1260,11 +1361,10 @@ class GroupingWindow:
         if not self.sel_idx:
             messagebox.showwarning("確認", "写真を選択してから適用してください", parent=self.win)
             return
+        self.history.append(self._dish_snapshot_grouping())
+        self._update_grouping_undo_btn()
         applied = list(self.sel_idx)
-        changed_before = {}
         for j in applied:
-            if self.image_states[j]["dish"] != name:
-                changed_before[j] = self.image_states[j]["dish"]
             self.image_states[j]["dish"] = name
             self._refresh(j)
         self.sel_idx.clear()
@@ -1281,27 +1381,11 @@ class GroupingWindow:
                 parent=self.win)
             if ans:
                 for j in unnamed_similar:
-                    if self.image_states[j]["dish"] != name:
-                        changed_before[j] = self.image_states[j]["dish"]
                     self.image_states[j]["dish"] = name
                     self._refresh(j)
-                if changed_before:
-                    self.history.append(changed_before)
                 self.sel_lv.set(f"✅ 計{len(applied)+len(unnamed_similar)}枚に「{name}」を設定しました")
                 return
-        if changed_before:
-            self.history.append(changed_before)
         self.sel_lv.set("✅ 適用しました！次のグループを選択してください")
-
-    def _undo_last_apply(self):
-        if not self.history:
-            messagebox.showinfo("確認", "取り消せる適用履歴がありません。", parent=self.win)
-            return
-        prev_states = self.history.pop()
-        for idx, prev_dish in prev_states.items():
-            self.image_states[idx]["dish"] = prev_dish
-            self._refresh(idx)
-        self.sel_lv.set("↩ 直前の適用を取り消しました")
 
     def _find_similar(self, applied_indices, threshold=0.85):
         """適用済み写真と色ヒストグラムが近い未設定写真を返す"""
@@ -1350,6 +1434,8 @@ class GroupingWindow:
         if not name:
             messagebox.showwarning("確認", "料理名を入力してください", parent=self.win)
             return
+        self.history.append(self._dish_snapshot_grouping())
+        self._update_grouping_undo_btn()
         for j in range(len(self.selected)):
             self.image_states[j]["dish"] = name
             self._refresh(j)
@@ -1475,6 +1561,7 @@ class Step1App:
         self.file_states = {}      # {i: {"dish": str, "orientation": str}}
         self.files = []            # [Path]
         self.photo_tk_large = None
+        self.dish_history = []     # 料理名適用前の全dishスナップショット（UNDOスタック）
         self._build()
 
     def _build(self):
@@ -1584,6 +1671,14 @@ class Step1App:
         tk.Button(right, text="全枚に適用", command=self._apply_all,
                   bg="#8E44AD", fg="white", font=("Meiryo", 9),
                   relief=tk.FLAT, pady=4).pack(fill=tk.X, pady=2)
+        self.step1_undo_btn = tk.Button(
+            right, text="↩ 元に戻す", command=self._undo_step1_dish_apply,
+            bg="#7F8C8D", fg="white", font=("Meiryo", 9, "bold"),
+            relief=tk.FLAT, pady=5, state=tk.DISABLED,
+            disabledforeground="#555555")
+        self.step1_undo_btn.pack(fill=tk.X, pady=2)
+        self.root.bind("<Control-z>", self._on_step1_ctrl_z)
+        self.root.bind("<Control-Z>", self._on_step1_ctrl_z)
 
         # 縦横切り替え
         tk.Frame(right, bg="#4A5568", height=1).pack(fill=tk.X, pady=6)
@@ -1687,6 +1782,9 @@ class Step1App:
             orient = get_orientation(p)
             self.file_states[i] = {"dish": "", "orientation": orient}
 
+        self.dish_history.clear()
+        self._update_step1_undo_btn()
+
         self.sel_indices = set()
         self.thumb_refs = {}
 
@@ -1781,6 +1879,30 @@ class Step1App:
         except Exception:
             pass
 
+    def _snapshot_step1_dishes(self):
+        return {i: self.file_states[i]["dish"] for i in self.file_states}
+
+    def _update_step1_undo_btn(self):
+        if getattr(self, "step1_undo_btn", None):
+            self.step1_undo_btn.config(
+                state=tk.NORMAL if self.dish_history else tk.DISABLED)
+
+    def _on_step1_ctrl_z(self, event=None):
+        self._undo_step1_dish_apply()
+        return "break"
+
+    def _undo_step1_dish_apply(self):
+        if not self.dish_history:
+            return
+        snap = self.dish_history.pop()
+        for idx, prev_dish in snap.items():
+            if idx in self.file_states:
+                self.file_states[idx]["dish"] = prev_dish
+                self._refresh(idx)
+        self.sel_lv.set("↩ 料理名を元に戻しました")
+        self._update_status()
+        self._update_step1_undo_btn()
+
     def _apply(self):
         name = self.dish_var.get().strip()
         if not name:
@@ -1790,6 +1912,8 @@ class Step1App:
         if not self.sel_indices:
             messagebox.showwarning("確認", "写真を選択してから適用してください", parent=self.root)
             return
+        self.dish_history.append(self._snapshot_step1_dishes())
+        self._update_step1_undo_btn()
         for j in list(self.sel_indices):
             self.file_states[j]["dish"] = name
             self._refresh(j)
@@ -1803,6 +1927,8 @@ class Step1App:
         if not name:
             messagebox.showwarning("確認", "料理名を入力してください", parent=self.root)
             return
+        self.dish_history.append(self._snapshot_step1_dishes())
+        self._update_step1_undo_btn()
         for j in range(len(self.files)):
             self.file_states[j]["dish"] = name
             self._refresh(j)
