@@ -1,7 +1,490 @@
 {
-  "updated_at": "2026-04-07 22:47",
+  "updated_at": "2026-04-08 22:50",
   "count": 100,
   "articles": [
+    {
+      "title": "米メタ、初ＡＩ「Muse Spark」発表 開発競争巻き返しへ",
+      "source": "Reuters",
+      "category": "AI・テクノロジー",
+      "subcategory": "話題",
+      "summary": "米メタ、初ＡＩ「Muse Spark」発表 開発競争巻き返しへ Reuters／事業視点: AI活用, 発信ネタ, 商品開発",
+      "business_tags": [
+        "ai_utilization",
+        "content_marketing",
+        "product_development"
+      ],
+      "business_tag_labels": [
+        "AI活用",
+        "発信ネタ",
+        "商品開発"
+      ],
+      "published": "2026-04-08 17:18",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQV1hXSXp1a3ljS18zVHZ1MEN6SmJoRUdhNTN0YWFZOGllb1lWaDVPUlphUW9HS0x3cldMTktxYlBadC13R1JtUWUtaVhGR3hhcmw4TmFOUklzWHZyTmRvcDJwZW1rYkIzM3FtQXp5S3JfcnVGZ2pvdk9Zc2pDTy1VOA?oc=5"
+    },
+    {
+      "title": "【PR】親子のきずなを育む「植育」のススメ。カゴメ社員・小川さんに聞く、トマト栽培から始まる豊かな食育",
+      "source": "Yahoo!ニュース",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "【PR】親子のきずなを育む「植育」のススメ。カゴメ社員・小川さんに聞く、トマト栽培から始まる豊かな食育 Yahoo!ニュース／事業視点: 食育, 共食・家庭",
+      "business_tags": [
+        "food_education",
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "食育",
+        "共食・家庭"
+      ],
+      "published": "2026-04-08 15:21",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1CeTJ6Rm9SVTF1NFlEWjgxUTdJVU5tdVk3eE0tbVlwOE1EUFpJNG5iWW9KUlptR056eHd0NFhudG1nYUlldUdVZkNPeHJ1d3VESWRyS0hDaUxaWG82NWdsNmFNYw?oc=5"
+    },
+    {
+      "title": "＼現役保育園栄養士が教える／札幌市で親子食育料理教室を開きたい",
+      "source": "CAMPFIRE (キャンプファイヤー)",
+      "category": "パパ・育児",
+      "subcategory": "レシピ・料理",
+      "summary": "＼現役保育園栄養士が教える／札幌市で親子食育料理教室を開きたい CAMPFIRE (キャンプファイヤー)／事業視点: 健康経営, オンライン料理教室, 食育",
+      "business_tags": [
+        "health_management",
+        "online_cooking",
+        "food_education",
+        "family_communication",
+        "recipe_business"
+      ],
+      "business_tag_labels": [
+        "健康経営",
+        "オンライン料理教室",
+        "食育",
+        "共食・家庭",
+        "レシピ活用"
+      ],
+      "published": "2026-04-08 12:34",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9VWnVsV2FKNkVEa29aMnFaMjdRQ3RPN0xkYW9ZdW9Dd2FyZEZWV3B4QUMzM1pKblZVSXI1ZEFTdzU0RkZjd00yTEhGZU14ZmdueW1N?oc=5"
+    },
+    {
+      "title": "サンマルク、モス…外食チェーンが朝食メニュー強化 共働きや単身世帯の需要拡大",
+      "source": "産経ニュース",
+      "category": "料理・食",
+      "subcategory": "話題",
+      "summary": "サンマルク、モス…外食チェーンが朝食メニュー強化 共働きや単身世帯の需要拡大 産経ニュース／事業視点: レシピ活用, 発信ネタ",
+      "business_tags": [
+        "recipe_business",
+        "content_marketing"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "発信ネタ"
+      ],
+      "published": "2026-04-08 12:00",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBrS0dSYW9CbkpQRzRuU0hlSUlFWVN2eDR2Yy1ObFExdzBtdXFsOU1wbjVuREpFZHRSem8xSktublRQWkxjZ3o1ZHJFeXVkc3B2NEhQSEhjU1ZETHNvcFpjeWhHSmcyOHVudVVxOHpmbkZoZ0xDaEE?oc=5"
+    },
+    {
+      "title": "【ディンカム】おすすめ食べ物・料理【Dinkum】",
+      "source": "AppMedia",
+      "category": "料理・食",
+      "subcategory": "レシピ・料理",
+      "summary": "【ディンカム】おすすめ食べ物・料理【Dinkum】 AppMedia／事業視点: レシピ活用",
+      "business_tags": [
+        "recipe_business"
+      ],
+      "business_tag_labels": [
+        "レシピ活用"
+      ],
+      "published": "2026-04-08 11:49",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1rZVJVVDdvZzU4MC1QeGdwN2x2dW91RkJkeDBsMW1iTFFiVldJdl80M3hpUnFxT3hPUmJMQUFERW5oVEp0RGV0Q0ZXYw?oc=5"
+    },
+    {
+      "title": "kourousyou-leaflet-_page-0001 – 健康・福祉・子育て",
+      "source": "city.gotemba.lg.jp",
+      "category": "パパ・育児",
+      "subcategory": "健康",
+      "summary": "kourousyou-leaflet-_page-0001 – 健康・福祉・子育て city.gotemba.lg.jp／事業視点: 共食・家庭",
+      "business_tags": [
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "共食・家庭"
+      ],
+      "published": "2026-04-08 09:56",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOU08zNkpIa0gzRFc3XzQyTm5VTzhvd1RUTGVtZmdPZmRCWGlSV2RjRmc4UkpoOHFiOGZ5aTZKMG1FZXE5emZWa1ZKdWs2S1VfODFHV2g1Yjd4dVNuN2huVlVhYmJ4eDN2d1hYUGtiOFNDX0VhdFVFMDRtV1d4Umt1TFlrTnFjVnFueXhvcC15bnlLLWVLUExobzVTVmtVNXpf?oc=5"
+    },
+    {
+      "title": "【その数なんと11品目】おうちでポッポる？イトーヨーカドーのフードコート「ポッポ」が冷凍食品になりました",
+      "source": "ｄメニューニュース",
+      "category": "料理・食",
+      "subcategory": "話題",
+      "summary": "【その数なんと11品目】おうちでポッポる？イトーヨーカドーのフードコート「ポッポ」が冷凍食品になりました ｄメニューニュース／事業視点: レシピ活用, 発信ネタ",
+      "business_tags": [
+        "recipe_business",
+        "content_marketing"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "発信ネタ"
+      ],
+      "published": "2026-04-08 07:50",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44U3ViZ2hianhpVjEtVzdRaVV6N0JtM3l2RWpIVWdrT1kxbDBaRFpoTFpEaENPOHFZTF9sSVlLZ2g1Sl8tMzdPQVdpN2QyUFl6bEh1ZnBVWWIxYzJDdVV0MnVlZXVlNTRDOU11MHQ1T2pCdXda0gF6QVVfeXFMT3Y4MkYyYkFjYzZsdGhPZkhNNUV5dEhLWGZFaUpaalJsMFlQQVYtWTNUSFJVUmozaGZaOGN0bDNOYTVybVZpa2pCMGdYYXJfbEhhd09yV3lCUFBNZWtiUU41OEdBejlleEdpSEJMTllQbl9VYU4xcHFqNVE?oc=5"
+    },
+    {
+      "title": "「共有知」づくりでメディアに役割 編集にはAI活用を",
+      "source": "日本経済新聞",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "「共有知」づくりでメディアに役割 編集にはAI活用を 日本経済新聞／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-08 07:00",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA3cnhfTzZ2cFBsdUxJSU9EeWNtdThSbmZSMC14cjhNRUtYRUZqaldRQVVxcjFnZmdCaUZha3VXZW9Sb1FSQXd3QjZkT0xFX0p1OUx5VW9MbHA3MGVyVVRtRHpCN2dEZ0xxRXQyOA?oc=5"
+    },
+    {
+      "title": "ロングセラーブランドが生まれ変わって新登場！おいしさと栄養の両立を実現 「愛するおいしさ 明治ラブ」 2026年4月14日 発売／全国",
+      "source": "株式会社 明治",
+      "category": "料理・食",
+      "subcategory": "新商品",
+      "summary": "ロングセラーブランドが生まれ変わって新登場！おいしさと栄養の両立を実現 「愛するおいしさ 明治ラブ」 2026年4月14日 発売／全国 株式会社 明治／事業視点: 健康経営, レシピ活用, 発信ネタ",
+      "business_tags": [
+        "health_management",
+        "recipe_business",
+        "content_marketing",
+        "product_development"
+      ],
+      "business_tag_labels": [
+        "健康経営",
+        "レシピ活用",
+        "発信ネタ",
+        "商品開発"
+      ],
+      "published": "2026-04-08 05:06",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1yaEh1X05fU2JZSjQwWnhGbzZGQ181aTl0RFZZQXd1cW1RZl9LMy1CVnItVEJrMmVRanBYUWdsSlRZZDVtUHZ0YWpBT19QVTIzdkpUdlJrU0FkNFdHaEJuYWFhNUk3ckdiZVB4ajhBUmJWS0Q4UThB?oc=5"
+    },
+    {
+      "title": "【さとふるニュースレター】春休みに親子で学ぶ食育イベント「さとふる親子料理教室」を開催",
+      "source": "PR TIMES",
+      "category": "パパ・育児",
+      "subcategory": "レシピ・料理",
+      "summary": "【さとふるニュースレター】春休みに親子で学ぶ食育イベント「さとふる親子料理教室」を開催 PR TIMES／事業視点: オンライン料理教室, 食育, 共食・家庭",
+      "business_tags": [
+        "online_cooking",
+        "food_education",
+        "family_communication",
+        "recipe_business",
+        "community"
+      ],
+      "business_tag_labels": [
+        "オンライン料理教室",
+        "食育",
+        "共食・家庭",
+        "レシピ活用",
+        "コミュニティ"
+      ],
+      "published": "2026-04-08 04:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OT0FjTXQtMkVRemJuSHlQaWlWOUxYUVlNYXdoTlJVZ2dZd0M4RUNhMWJkTkFnRUVrdE1oUFR6VFJkMGEwU2ZzbkZlX1d6RFdBN01fUi1XSzhucHpvc0xBVWFsdWN4cjRxY1E?oc=5"
+    },
+    {
+      "title": "「チームとしてのAI活用」が進まないのはなぜか？ “現場任せ”の限界、Gartnerが指摘",
+      "source": "ITmedia",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "「チームとしてのAI活用」が進まないのはなぜか？ “現場任せ”の限界、Gartnerが指摘 ITmedia／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-08 04:00",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9VN1RaZHR3cm1rV3pmeHJsVlVSSGdwX2EzTzRiTTZ5NW5WZ2lmWmZRUnl3TXBCQmRMVEwzaV9EWWM2VEJtdFN2YUdqSGdkWjFXUWEwN2NTTWhOazhZOUFDUjJjS1gxMkdzT1ZFZkpTYlBRdw?oc=5"
+    },
+    {
+      "title": "AI活用を見据えデータ品質管理フレームワークの運用を開始",
+      "source": "PR TIMES",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "AI活用を見据えデータ品質管理フレームワークの運用を開始 PR TIMES／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-08 04:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ickw3cklNSUFza3Z6bjlSWVVGRzVYSlNneDhNUXphNUI4dlg5MDUtd2pRWEVXMjV4aVRzQ0E0RTV1Zlc5NjRKeW1SQVd5OFBXclZteWEya3QyNGRfOEk2WC1JZzk2bjF6WXc?oc=5"
+    },
+    {
+      "title": "【 名古屋 初開催 】AIによるビジネス変革・業務効率化を加速させる展示会 AI World｜来場登録受付中",
+      "source": "PR TIMES",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "【 名古屋 初開催 】AIによるビジネス変革・業務効率化を加速させる展示会 AI World｜来場登録受付中 PR TIMES／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-08 04:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1qMmowWVEyX3V5dHZsUVd5Unk5UG1BWE9uS3ZyMG9EV0RHalZfTW9jdGZPdGVvZzRTTHFFX08xTHV1ZlctcDJrVlMtaF9XTU1FTVFFV2pVTUJiWllEWXJOc2RYRHUwbHFOZHc?oc=5"
+    },
+    {
+      "title": "ベルシステム２４－反発 M&Aなど200億円投資 AI活用へ3年で＝日経(トレーダーズ・ウェブ)",
+      "source": "Yahoo!ファイナンス",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "ベルシステム２４－反発 M&Aなど200億円投資 AI活用へ3年で＝日経(トレーダーズ・ウェブ) Yahoo!ファイナンス／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-08 04:00",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPY0xRQkFBNUp0Mmt0Sms1clBYbmNjWERMYjFYeWNUaHZvZnc3MGhtQ29FM0JWUnlQT2pzaU5aSzlmSy1TaWI5MmR1SXIzd0hNQ21GR1REY1ZXZkZJLXhVSm40WXdEaW40Vi1hbXhxRlM2LUN2NkNoRzB6dlhyRXlSX1ZncUVXblU?oc=5"
+    },
+    {
+      "title": "ZOZO独自のAI活用指標「All ZOZO AI Readiness Score（AZARS）」を導入 | 株式会社ZOZOのプレスリリース",
+      "source": "PR TIMES",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "ZOZO独自のAI活用指標「All ZOZO AI Readiness Score（AZARS）」を導入 | 株式会社ZOZOのプレスリリース PR TIMES／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-08 03:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBVSC1CRnlSNUNQZHgwalBPeE1wcHc0MnYyajdRd3VKQ2R4Y2NvMHV6REtTWUZOUVJ2ZHlwSUZZY25ZbkstajBVOGlJblFVSjVBeWhaZ29KS3h0S1NoLTVKRXZDbmJGOE93ekE?oc=5"
+    },
+    {
+      "title": "CHEFLINK、Food Create EXPO 群馬 2026に出展",
+      "source": "PR TIMES",
+      "category": "料理・食",
+      "subcategory": "話題",
+      "summary": "CHEFLINK、Food Create EXPO 群馬 2026に出展 PR TIMES／事業視点: レシピ活用, 発信ネタ",
+      "business_tags": [
+        "recipe_business",
+        "content_marketing"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "発信ネタ"
+      ],
+      "published": "2026-04-08 02:30",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1VNmRKNHZka05wLXJ1a2ZBc0tuenNQSmRFT0FJalVOMzdHMExjaFRRcWxFWHA0UzEtMU03NTRQWmVxVXpTMWNNYVlFemI1aUtEQXh1MThfTGFWRlBmVV9OUzBkaENOdEJhRUE?oc=5"
+    },
+    {
+      "title": "イトーヨーカ堂 フードコート「ポッポ」ブランドの冷凍食品を発売",
+      "source": "激流オンライン",
+      "category": "料理・食",
+      "subcategory": "新商品",
+      "summary": "イトーヨーカ堂 フードコート「ポッポ」ブランドの冷凍食品を発売 激流オンライン／事業視点: オンライン料理教室, レシピ活用, 発信ネタ",
+      "business_tags": [
+        "online_cooking",
+        "recipe_business",
+        "content_marketing",
+        "product_development"
+      ],
+      "business_tag_labels": [
+        "オンライン料理教室",
+        "レシピ活用",
+        "発信ネタ",
+        "商品開発"
+      ],
+      "published": "2026-04-08 02:05",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBRMGJOX2stVl9odTZKVVBIRV91ZWhrUzBZTW56cXRCT1FxaEZUN0lJNlhranpxTnRzQ2EwYVVkS2V5SEt2RFdvM2Z4SEQ3N0hacnc?oc=5"
+    },
+    {
+      "title": "令和８年度 ひきこもりの方とご家族のための居場所のご案内",
+      "source": "town.hirono.iwate.jp",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "令和８年度 ひきこもりの方とご家族のための居場所のご案内 town.hirono.iwate.jp／事業視点: 共食・家庭",
+      "business_tags": [
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "共食・家庭"
+      ],
+      "published": "2026-04-08 01:48",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1ESlg0RnNxRmN1bE9KQ0FvUG4zM3VTLWZkLUUyXy1nSGlWZncydUw2STV4WldHeWU0Sm4xc3hoNGxnb1NWeTQ3a3QyWDY5OTJpWGtBTzlwLVRzdU1fMzhzeQ?oc=5"
+    },
+    {
+      "title": "子どもの朝食「菓子パン」ってアリ？ “意識すべきこと”＆不足する栄養を管理栄養士が解説",
+      "source": "ニコニコニュース",
+      "category": "パパ・育児",
+      "subcategory": "健康",
+      "summary": "子どもの朝食「菓子パン」ってアリ？ “意識すべきこと”＆不足する栄養を管理栄養士が解説 ニコニコニュース／事業視点: 健康経営, 共食・家庭",
+      "business_tags": [
+        "health_management",
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "健康経営",
+        "共食・家庭"
+      ],
+      "published": "2026-04-08 01:24",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55LWQzeFQtelhBT0lJZGFIY0s5ejhoMkRyN0VyNE44bEJWTm15bXhOdmZpaVROYThZTlQwWmJUall3RGZ6V2lKS0hGd0FRWFJ4bTRTWg?oc=5"
+    },
+    {
+      "title": "食品の消費税0％で飲食店はどうなる？外食への影響・実務負担・今取るべき対策を解説",
+      "source": "PR TIMES",
+      "category": "料理・食",
+      "subcategory": "話題",
+      "summary": "食品の消費税0％で飲食店はどうなる？外食への影響・実務負担・今取るべき対策を解説 PR TIMES／事業視点: レシピ活用, 発信ネタ",
+      "business_tags": [
+        "recipe_business",
+        "content_marketing"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "発信ネタ"
+      ],
+      "published": "2026-04-08 01:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Hd28yV2JkQzlxQ2JFRVpsbUF6S01SVzZqZ2R4VkVjNUJOZC02Y2NhVUE2T05IRUNOZnZtaDhyMmFhT0UyZEJHSlM3dk0xQjVCakxjQjRBWHhvYV9YdmRTOFIwZE93YXBSaUE?oc=5"
+    },
+    {
+      "title": "新生活はくるみを食べて朝からしっかり栄養補給！ ～忙しい朝でも手軽に栄養が摂れる、 くるみの新生活応援レシピを公開～",
+      "source": "atpress.ne.jp",
+      "category": "料理・食",
+      "subcategory": "レシピ・料理",
+      "summary": "新生活はくるみを食べて朝からしっかり栄養補給！ ～忙しい朝でも手軽に栄養が摂れる、 くるみの新生活応援レシピを公開～ atpress.ne.jp／事業視点: 健康経営, レシピ活用",
+      "business_tags": [
+        "health_management",
+        "recipe_business"
+      ],
+      "business_tag_labels": [
+        "健康経営",
+        "レシピ活用"
+      ],
+      "published": "2026-04-08 00:30",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1uSEZvMEhBNFBLYU9hZFhQRlZ0OFdGWk94alBWOTlDZlpTRVMtZHlpaF9qZDk2aDQwUWJPTDI4WjZWU0RPRk9XaTFoM0U4Zw?oc=5"
+    },
+    {
+      "title": "【埼玉県入間市】現場の熱意が生む「完全手作り給食」で子どもたちを笑顔に。ジーエルサイエンス株式会社様から企業版ふるさと",
+      "source": "ニコニコニュース",
+      "category": "パパ・育児",
+      "subcategory": "企業動向",
+      "summary": "【埼玉県入間市】現場の熱意が生む「完全手作り給食」で子どもたちを笑顔に。ジーエルサイエンス株式会社様から企業版ふるさと ニコニコニュース／事業視点: 共食・家庭",
+      "business_tags": [
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "共食・家庭"
+      ],
+      "published": "2026-04-08 00:30",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ZeEVKUUxzV2JQcG10YVBNbDN3NWMwdW9XcjZvMVg1MUFfZS1VZnVXczNUYWM2SXlZZDRHNnc3Tmx3ZGRWX1gxMUpySW1MWXp1R01QUQ?oc=5"
+    },
+    {
+      "title": "令和8年度から「子ども・子育て支援金制度」がはじまります",
+      "source": "city.imabari.ehime.jp",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "令和8年度から「子ども・子育て支援金制度」がはじまります city.imabari.ehime.jp／事業視点: 共食・家庭",
+      "business_tags": [
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "共食・家庭"
+      ],
+      "published": "2026-04-07 23:46",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ybVU5Y3lDTUNEcG9tSHdWb1lkQ3hyMGVSUUhIS2lvV0JsSHdVUlZpeXczMXlOUGZleU8wUE82Y2U5MGNycWRScDZ1a0J2Rko2TlNaeVZZX0U0YmZHMTZDVXJR?oc=5"
+    },
+    {
+      "title": "元箱根ランナー、ハンバーガー店を開く ふるさとの食材でハッピーに",
+      "source": "朝日新聞",
+      "category": "料理・食",
+      "subcategory": "レシピ・料理",
+      "summary": "元箱根ランナー、ハンバーガー店を開く ふるさとの食材でハッピーに 朝日新聞／事業視点: レシピ活用",
+      "business_tags": [
+        "recipe_business"
+      ],
+      "business_tag_labels": [
+        "レシピ活用"
+      ],
+      "published": "2026-04-07 21:00",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MYURFMXUzc0ZIVThORm9ZMjBRc1ZHVjdwYko3U0tUNUZ4VWlsQU1oRUhCMTR5ZHJJNUhoMXNNM25peVJEODllSTV3bVNPRWhmY3VfNVc3QnRiMDBJbmlvZ181SndETDg?oc=5"
+    },
+    {
+      "title": "アンソロピック、次期AIを限定公開 サイバー対策優先で一般提供せず",
+      "source": "日本経済新聞",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "アンソロピック、次期AIを限定公開 サイバー対策優先で一般提供せず 日本経済新聞／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-07 20:52",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA1UlF5V1NQcjRCaUtaX0M1bllqMHhNRzA3cUhvMHRReVdaWkREQVpSZDFEc2VYeWp4T3dxYThHaGxJcW11aUVVWm1XVC11U25teGFmX1VrbnZoeWM4RER1bDVJZ1BtekdsaGFCQw?oc=5"
+    },
+    {
+      "title": "〈幸齢社会〉 シニアのためのAI活用術",
+      "source": "seikyoonline.com",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "〈幸齢社会〉 シニアのためのAI活用術 seikyoonline.com／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-07 20:45",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NU0YyMWY1U2JFcHp4cUNJTGNkR1EwZXZYWFZlQnVaeTBIa1BoSGpSRjIyTkZjU0ZMQU80cHRKR1R1TFBpMDBIWnBYRmxNOGo5Q2lBQ1g0WlZZTzI4Z21iOTNYZURBWjA5NDdaMXhtSkZLRFJwTDNucw?oc=5"
+    },
+    {
+      "title": "離乳食教室や親子クッキングなどを通じて食育を推進するキッチン＝子育て支援施設かぱる（写真提供＝かぱる）",
+      "source": "筑豊経済新聞",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "離乳食教室や親子クッキングなどを通じて食育を推進するキッチン＝子育て支援施設かぱる（写真提供＝かぱる） 筑豊経済新聞／事業視点: 食育, 共食・家庭",
+      "business_tags": [
+        "food_education",
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "食育",
+        "共食・家庭"
+      ],
+      "published": "2026-04-07 20:37",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1oSVltcldWbUFDU3JXbVU0R0VBRG8yNnpPM3lsMDYtalRNN1hjQ0NOTTZHMVZZYkZCQ2phRFcyUUN4SXNuc2RKRjBEY1ROMVBRNTJ3dQ?oc=5"
+    },
+    {
+      "title": "半導体装置、AI需要がサイクルの「谷」打ち消す",
+      "source": "日本経済新聞",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "半導体装置、AI需要がサイクルの「谷」打ち消す 日本経済新聞／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-07 20:00",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9pd01GNnpkM0VHZ1diOFNqODI4aUJ3cm5oOUtWN0xGQlNISW9acjMxN0F3clZQWFlXc2s2LWxtUmpDXzBJNzVuZFZZc3dHZ2JvUkRMSEpFOTJsX2l3NXVIZDR6WndaTDB4VTcxeU44TzhSMmNRdGxDeWJoMjNfQQ?oc=5"
+    },
+    {
+      "title": "ソフト検査のバルテス、AI活用加速 27年度までにテスト設計工程5割減",
+      "source": "日本経済新聞",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "ソフト検査のバルテス、AI活用加速 27年度までにテスト設計工程5割減 日本経済新聞／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-07 20:00",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWYnYzdUM3RDIzWkY4eHd5VE9UUEpSTEdYWmpKOG9VMEdEWHFQdHB2R1VUd05Gb1lQZnBJVjMtWUNEejdUZFhCSUxMS2R0Wnp3U3djcFh1NXk4ajdlOUZxUVdyU2dpYl9CeGVpeQ?oc=5"
+    },
     {
       "title": "「２５年ずーっと売上 Ｎｏ．１」冷凍食品「本格炒め炒飯」が新ＣＭに今田美桜を起用…発売から２５周年 （スポーツ報知）",
       "source": "Yahoo!ニュース",
@@ -22,19 +505,36 @@
       "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOU2dWd2RTdEtVVVZzUVBycjhFUUp1bU5kRHNjbU90WlFmNlJBWGhJdnlTbVVwV0o2R1NudUQwYXZteWlzcmFyTWVubUgwb3FjWVNJamxhTmR1dDBtLVFFaEhpa09oSW5VcDlWSjJ1U3VRR0c4UXZXb1U4R0tJM3Z3NHhrWDlEazVKWWhyYXBn?oc=5"
     },
     {
-      "title": "家族でアート×ランチ×外遊び！「石村嘉成展」で充実した1日を。",
-      "source": "UMKテレビ宮崎",
-      "category": "パパ・育児",
-      "subcategory": "育児・家庭",
-      "summary": "家族でアート×ランチ×外遊び！「石村嘉成展」で充実した1日を。 UMKテレビ宮崎／事業視点: 共食・家庭",
+      "title": "「採用AIに差別された」誰が責任負う？ 11億件却下で訴訟も",
+      "source": "日本経済新聞",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "「採用AIに差別された」誰が責任負う？ 11億件却下で訴訟も 日本経済新聞／事業視点: AI活用",
       "business_tags": [
-        "family_communication"
+        "ai_utilization"
       ],
       "business_tag_labels": [
-        "共食・家庭"
+        "AI活用"
       ],
-      "published": "2026-04-07 17:04",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVSVNPTTlwZGV5QjZZV0c3NlVnRUpnT2s4Rk9QOFlMWS1FUW9XSlJXNC1FZkdObXREbzJHNzhKVW5Pb3hZVmJ2OXBEU19iYTFj?oc=5"
+      "published": "2026-04-07 17:00",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1JVzhXOFJrNjU0RnQ4dFgxVnZVcnFOR3V1cVI2c3RLQ0RiMnI3NzRIVlh0eTdsaHNUckpvWk1URTNEaFFpUjQ2dlR4STRsV1ljYVhsZi1JR3NaZFlhbmEwT25ia2NMc1Atc1VYTA?oc=5"
+    },
+    {
+      "title": "1000days*を卒業してから就学するまでのお子様の‘マナビ’の場「KIDS LABO」 「Color",
+      "source": "ニコニコニュース",
+      "category": "パパ・育児",
+      "subcategory": "話題",
+      "summary": "1000days*を卒業してから就学するまでのお子様の‘マナビ’の場「KIDS LABO」 「Color ニコニコニュース／事業視点: 共食・家庭, 発信ネタ",
+      "business_tags": [
+        "family_communication",
+        "content_marketing"
+      ],
+      "business_tag_labels": [
+        "共食・家庭",
+        "発信ネタ"
+      ],
+      "published": "2026-04-07 15:18",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBSZFR3X0Y0NmtqNWVsMjZJdmljNTFLbnFvRUUxQUkxR05IZTNVZ3JyQ2JiMkpmNVNQTFFrdkRZMVZ6ejZfVDItTVJXX0dLYzBaSm1oNQ?oc=5"
     },
     {
       "title": "スペイン栄養学会のスポーツにおける栄養戦略に関するコンセンサス 高炭水化物食・低炭水化物食など最新栄養戦略を総括",
@@ -54,21 +554,36 @@
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE4xNU5GdEpMMWtCWTNlblRPY3k0eTFna3pqcFNGZHlOVEtmcE05WHUyUURxX01TSV9Va0NibVlyeGN1VTRxT3oyNDhHNA?oc=5"
     },
     {
-      "title": "京橋中央商店街で「キタ京橋マルシェ」 8店舗出店、子ども店主のブースも（ニュース地図）",
-      "source": "京橋経済新聞",
-      "category": "パパ・育児",
-      "subcategory": "話題",
-      "summary": "京橋中央商店街で「キタ京橋マルシェ」 8店舗出店、子ども店主のブースも（ニュース地図） 京橋経済新聞／事業視点: 共食・家庭, 発信ネタ",
+      "title": "電子レンジ 食材からの発火に注意",
+      "source": "朝日新聞",
+      "category": "料理・食",
+      "subcategory": "レシピ・料理",
+      "summary": "レシピ・料理に関する話題。料理・食分野で注目されるニュースです。／事業視点: レシピ活用",
       "business_tags": [
-        "family_communication",
+        "recipe_business"
+      ],
+      "business_tag_labels": [
+        "レシピ活用"
+      ],
+      "published": "2026-04-07 15:00",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkR1dZTHhrbmtrSThnWUhXZ1NwMXJGUFUwZ2RUZkFRTWVhYU5kZWtBX2VMNDVjV2h6b0dZQnI4elBMYVZMT25aVDdEVk44T21ZTkpablJyU3hsQlhqZEc2enFQcHF5UFpf?oc=5"
+    },
+    {
+      "title": "インテル、マスク氏のＡＩ半導体「テラファブ」構想に参画へ",
+      "source": "Reuters",
+      "category": "AI・テクノロジー",
+      "subcategory": "話題",
+      "summary": "インテル、マスク氏のＡＩ半導体「テラファブ」構想に参画へ Reuters／事業視点: AI活用, 発信ネタ",
+      "business_tags": [
+        "ai_utilization",
         "content_marketing"
       ],
       "business_tag_labels": [
-        "共食・家庭",
+        "AI活用",
         "発信ネタ"
       ],
-      "published": "2026-04-07 13:30",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE94d3FoNEczbmVFSmpzdU9zYldBTjNwOWhlZzhjaGxORWM3T2ZMR2VIRzJjTHAyZlI2SkdWbk5hc1dTWTR3Q182VW1remVTT01veEs4?oc=5"
+      "published": "2026-04-07 14:35",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQ0VpZWltajVyTm1WRXI3QXdkUURaQTVDRlVOd3pKZkNUV3ktcFlGcUFLXzhqLWJvUFdkclhqTXpzRWZEeVJCTVdrZzJPMTFENG1UY05uZU9ZTmRRaHN1ek1iUVBhY0tTcjkzLTlGdWRYLUFSZ0E4X2gzRlNYcXJ0dQ?oc=5"
     },
     {
       "title": "【レポート】少子化でも拡大するベビーフード市場～アサヒグループ食品「和光堂」、120周年で示す“育児インフラ”の進化",
@@ -90,43 +605,11 @@
       "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFB5X0RtNHNCN0stdXMtRmtFX3ZDRFJndFQ2Z1JUb0lDZE5hZFZxWTRUQUFkYlNzUWVEcTF3eGJLdjRNdw?oc=5"
     },
     {
-      "title": "離乳食教室や親子クッキングなどを通じて食育を推進するキッチン＝子育て支援施設かぱる（写真提供＝かぱる）",
-      "source": "筑豊経済新聞",
-      "category": "パパ・育児",
-      "subcategory": "育児・家庭",
-      "summary": "離乳食教室や親子クッキングなどを通じて食育を推進するキッチン＝子育て支援施設かぱる（写真提供＝かぱる） 筑豊経済新聞／事業視点: 食育, 共食・家庭",
-      "business_tags": [
-        "food_education",
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "食育",
-        "共食・家庭"
-      ],
-      "published": "2026-04-07 13:04",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1oSVltcldWbUFDU3JXbVU0R0VBRG8yNnpPM3lsMDYtalRNN1hjQ0NOTTZHMVZZYkZCQ2phRFcyUUN4SXNuc2RKRjBEY1ROMVBRNTJ3dQ?oc=5"
-    },
-    {
-      "title": "【ディンカム】おすすめ食べ物・料理【Dinkum】",
-      "source": "AppMedia",
-      "category": "料理・食",
-      "subcategory": "レシピ・料理",
-      "summary": "【ディンカム】おすすめ食べ物・料理【Dinkum】 AppMedia／事業視点: レシピ活用",
-      "business_tags": [
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "レシピ活用"
-      ],
-      "published": "2026-04-07 13:01",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1rZVJVVDdvZzU4MC1QeGdwN2x2dW91RkJkeDBsMW1iTFFiVldJdl80M3hpUnFxT3hPUmJMQUFERW5oVEp0RGV0Q0ZXYw?oc=5"
-    },
-    {
       "title": "【夏の想い出を児童養護施設へ】鳥取発すず丸スイカ100玉で「笑顔」と「食育」を！",
-      "source": "キャンプファイヤー",
+      "source": "CAMPFIRE (キャンプファイヤー)",
       "category": "パパ・育児",
       "subcategory": "教育",
-      "summary": "【夏の想い出を児童養護施設へ】鳥取発すず丸スイカ100玉で「笑顔」と「食育」を！ キャンプファイヤー／事業視点: 食育, 共食・家庭",
+      "summary": "【夏の想い出を児童養護施設へ】鳥取発すず丸スイカ100玉で「笑顔」と「食育」を！ CAMPFIRE (キャンプファイヤー)／事業視点: 食育, 共食・家庭",
       "business_tags": [
         "food_education",
         "family_communication"
@@ -137,6 +620,25 @@
       ],
       "published": "2026-04-07 11:48",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5MQk83NHRqbXBKOFcwbmlqNHNaZkZDNjBQeVVuVHlzeGF2VUJuX2Q3cnpvb25aRUo2QmNFY2g1MXgtSmdRZEhDbGh5UjlLbHBVeUpB?oc=5"
+    },
+    {
+      "title": "【東京都文京区】食物アレルギーを学べる親子料理教室開催！米粉でイタリア料理のピアディーナづくり",
+      "source": "ガジェット通信 GetNews",
+      "category": "パパ・育児",
+      "subcategory": "レシピ・料理",
+      "summary": "【東京都文京区】食物アレルギーを学べる親子料理教室開催！米粉でイタリア料理のピアディーナづくり ガジェット通信 GetNews／事業視点: オンライン料理教室, 共食・家庭, レシピ活用",
+      "business_tags": [
+        "online_cooking",
+        "family_communication",
+        "recipe_business"
+      ],
+      "business_tag_labels": [
+        "オンライン料理教室",
+        "共食・家庭",
+        "レシピ活用"
+      ],
+      "published": "2026-04-07 10:30",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBzcFRGVVFMbzhJM0wwa2NhUmV6NkRwal9aMG50dGtBNW1wNk4xdTFGNl84M1V0VzJ1RTFKRXVwR3pfVXpIOW82U0x2TQ?oc=5"
     },
     {
       "title": "FOODEX JAPAN 2026で注目！スウェーデンの食品ブランド | LYKKE・Odensjö Hemlagad・Santa Mariaを紹介",
@@ -188,6 +690,53 @@
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBXOGx4a0RWWHQ0Um84ckNta1NveVAxa0hmN24tUWdfTnIwem5wNFU5N19lN1FSZ2MwTHF2TVBJSGlHZVQ3bnVOS2xhWTh5YU5tMkHSAWRBVV95cUxNY3BKdjdZVFVGRWYycEhVUVlnMjBSMTUtSFctZmc2UHVSRzEwbE91aHBRNS1mVXI1dnpCcGN2WlN6VUk4UkU1Y29CYXdkZ0tMSzV1RVJFT3JrbnIzTzFwbjdRX3Qx?oc=5"
     },
     {
+      "title": "バックオフィス業務を自律的に遂行するAIサービス 『マネーフォワード AI Cowork』を2026年7月より提供開始予定",
+      "source": "株式会社マネーフォワード",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "バックオフィス業務を自律的に遂行するAIサービス 『マネーフォワード AI Cowork』を2026年7月より提供開始予定 株式会社マネーフォワード／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-07 07:03",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9oQnFXOVk0X2ZJeFBkWmU4S1FZd0Y2S201U09oVFZ0dzR2WTlVeDBfZFFxcXdlRGpxSDRtaXlHb2dCZW81bjE0cUNEUnlmbEhlTEJhOU42dDhJZHFuc0tBNmVDbGdRc0FoaGJ2MldFVGl4SFNWR0dleng1QQ?oc=5"
+    },
+    {
+      "title": "宮崎県内おすすめイベント10選｜家族で楽しめるおでかけスポット特集",
+      "source": "UMKテレビ宮崎",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "宮崎県内おすすめイベント10選｜家族で楽しめるおでかけスポット特集 UMKテレビ宮崎／事業視点: 共食・家庭, コミュニティ",
+      "business_tags": [
+        "family_communication",
+        "community"
+      ],
+      "business_tag_labels": [
+        "共食・家庭",
+        "コミュニティ"
+      ],
+      "published": "2026-04-07 07:00",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9SSXM1YkFLZ1dXb3FwOEsyQXhwT05FSXJtWUhGemwzUEhMV25BR0ZrTzUxeHpHSzZjVmRUQTJOaHhQSHI0TDFELXBuQkFBVXc?oc=5"
+    },
+    {
+      "title": "家族でアート×ランチ×外遊び！「石村嘉成展」で充実した1日を。",
+      "source": "UMKテレビ宮崎",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "家族でアート×ランチ×外遊び！「石村嘉成展」で充実した1日を。 UMKテレビ宮崎／事業視点: 共食・家庭",
+      "business_tags": [
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "共食・家庭"
+      ],
+      "published": "2026-04-07 07:00",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVSVNPTTlwZGV5QjZZV0c3NlVnRUpnT2s4Rk9QOFlMWS1FUW9XSlJXNC1FZkdObXREbzJHNzhKVW5Pb3hZVmJ2OXBEU19iYTFj?oc=5"
+    },
+    {
       "title": "イトーヨーカ堂 今期の冷凍食品売上1割増目指す 「ポッポ」で軽食カテゴリーを活性化（食品新聞）",
       "source": "Yahoo!ニュース",
       "category": "料理・食",
@@ -203,40 +752,6 @@
       ],
       "published": "2026-04-07 06:59",
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Xdi1zQzhyUjFtRmdCT2xWNFZUQWZGREk5RWppNzBWdzU1U0pkWGwwQ3NRLTVHNXJJek5IcDBLNHgzNUp1bm14cEFUYzBwdENUMVVVRm9wRVRHZDgyM1p5aXYzUE1JZDUwN0xxY2dSZm11NHd5Snc4YW1uWXFBdG8?oc=5"
-    },
-    {
-      "title": "地元食材ふんだん会席料理 志摩・佐藤養殖場が「別亭まとや」オープン",
-      "source": "中日新聞Web",
-      "category": "料理・食",
-      "subcategory": "レシピ・料理",
-      "summary": "地元食材ふんだん会席料理 志摩・佐藤養殖場が「別亭まとや」オープン 中日新聞Web／事業視点: レシピ活用",
-      "business_tags": [
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "レシピ活用"
-      ],
-      "published": "2026-04-07 06:33",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ickdtUVVBTUZNZVBKTUV0QWZ1OEkxQ3p6TE9TM00xQlBWV2M1WmxLVGpuXzQyZ0pOS0dkdlAxU0lRUXVaRm1mWW5OVDZIc21CbHl3dQ?oc=5"
-    },
-    {
-      "title": "令和8年度 子育て応援イベント 第1弾「芝生DE遊ぼう！」開催のお知らせ",
-      "source": "city.tsukubamirai.lg.jp",
-      "category": "パパ・育児",
-      "subcategory": "AI/DX",
-      "summary": "令和8年度 子育て応援イベント 第1弾「芝生DE遊ぼう！」開催のお知らせ city.tsukubamirai.lg.jp／事業視点: AI活用, 共食・家庭, コミュニティ",
-      "business_tags": [
-        "ai_utilization",
-        "family_communication",
-        "community"
-      ],
-      "business_tag_labels": [
-        "AI活用",
-        "共食・家庭",
-        "コミュニティ"
-      ],
-      "published": "2026-04-07 06:26",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNejdPVmNXV3dMS3ExUzBIZkt5S21FbDliaWMtYmlUT01RRHE5cHpBZm11ekFWUkE0MklnNDBvWkhuS3lDcUh6bG9qb0FhSllpX0tfZklPMTJfNWhXa1h4cVVJR01hLUF3SVdkZXFWTXJicnpxMFBveTdGZGVTSnYwZHNWOEhoUWhGelNRbHZSTFFaQUw5TzlndG5GWTc3QXhOVVVMRHJ4RQ?oc=5"
     },
     {
       "title": "産後うつ病リスク、家族の支援不足で増大 酪農学園大が世帯年収別調査",
@@ -273,23 +788,6 @@
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSG15N3JyN01CaUFSQlZtWjBVSnBjVjJNd2Y3NG1GSlNtN1gwc2hkUmduVkdwTk1PbzJDNW16U2VMSVdqdW1LVU9ueUtkdkRQVlVwSDF1R3B6Z0lpR3JSYmVwaWVRaHpJQ2lSeDhEbVprTFRRQnZIQzhzVzBmekdKYUx3d1FIakp6NFAxMFBFMUtQWTNFcVpJN2VKOWVMN1Y3TnNoeGFTYTFXc1dISEJpLWpOQ1Nnbnp0bFBKMDJzcjc4dHJlcnU1ZklzcnA?oc=5"
     },
     {
-      "title": "1000days*を卒業してから就学するまでのお子様の‘マナビ’の場「KIDS LABO」 「Color Harmony」をテーマにファミリアプリスクールの保育スタッフが監修・実施",
-      "source": "PR TIMES",
-      "category": "パパ・育児",
-      "subcategory": "話題",
-      "summary": "1000days*を卒業してから就学するまでのお子様の‘マナビ’の場「KIDS LABO」 「Color Harmony」をテーマにファミリアプリスクールの保育スタッフが監修・実施／事業視点: 共食・家庭, 発信ネタ",
-      "business_tags": [
-        "family_communication",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "共食・家庭",
-        "発信ネタ"
-      ],
-      "published": "2026-04-07 06:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1hTjBpa0pqamY5MVdnRlBlU2NZMGJNcG9rTElndElpam55NXp1em5tME5XUGx6ZVlTR3I4MTF5UWY5bmFHV2hfbzRSdU5sVFdKYy1JUE5BMGpQNS1VTkxCSk5CYzlENUpaa2c?oc=5"
-    },
-    {
       "title": "4/11(土)『KOMORO FOOD MARKET10』中華点心からタイ料理、和菓子など地域グルメが一堂に集うフードイベントが駅前で開催＠長野県小諸市",
       "source": "Web-Komachi",
       "category": "料理・食",
@@ -305,23 +803,6 @@
       ],
       "published": "2026-04-07 05:16",
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBIOG5mV2x3b0Nka2RvUXRBWUpZLUhzd2s1cUlUYWhLSFA1dV8yM3pYTkQyc0ZyaDNNTjV2MDZYWWIyMWlLdlBYbGlHajhfUQ?oc=5"
-    },
-    {
-      "title": "FOOD×MOVIE 北海道発！食と映像の魅力を味わう祭典！「HOKKAIDO FOOVIE FESTIVAL 2026」11月6日～8日に開催！コンペティション作品募集開始！",
-      "source": "cinemacafe.net",
-      "category": "料理・食",
-      "subcategory": "AI/DX",
-      "summary": "FOOD×MOVIE 北海道発！食と映像の魅力を味わう祭典！「HOKKAIDO FOOVIE FESTIVAL 2026」11月6日～8日に開催！コンペティション作品募集開始！ c／事業視点: AI活用, レシピ活用",
-      "business_tags": [
-        "ai_utilization",
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "AI活用",
-        "レシピ活用"
-      ],
-      "published": "2026-04-07 04:17",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9mNjVOUHJOaGNkbmZoS3p6RkhQX3ZUMHA3dFVDR2ltWFB6aDUwQ1hjemZvcjJYYlhlWkFvcTJ2Z2ZqWnI0N1FGVUxUQXpnS0RLem9jOFBXR212OWYtMGdlOVdXWVlUa1lvSEpFNkVUaXZjcHBHOHc?oc=5"
     },
     {
       "title": "「1人欠ければ年間1000万円の損失」。人が資本という外食産業特有の課題解決に挑むカッパ・クリエイトの健康経営の全貌",
@@ -360,21 +841,6 @@
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE15STBzUk9waHh6ZjlOT3p3dHoyNmwtQ29xRkJIaHVCdUVaeE5BMlp0V3JfZzNrRUpkS1JPQ3E3SkthcVdISlp0WXNNbVZUZw?oc=5"
     },
     {
-      "title": "【写真クイズ】この食材の名前は？ 太陽を避けて育ちます",
-      "source": "おとなの週末Web",
-      "category": "料理・食",
-      "subcategory": "レシピ・料理",
-      "summary": "【写真クイズ】この食材の名前は？ 太陽を避けて育ちます おとなの週末Web／事業視点: レシピ活用",
-      "business_tags": [
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "レシピ活用"
-      ],
-      "published": "2026-04-07 03:03",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5yUlhRb0JXQ0JlUEpQZlVrWS15cExIWl9RdG1wQy1LVDR6Xy0yOERsUDFkWmRPQWJ2UER6ODVxN0VUTG1PdzVsaV8zTVZaRWxGSDlydA?oc=5"
-    },
-    {
       "title": "【環境省モデル事業】食品マッチングプラットフォーム「ステナス」による食品スーパーで販売できなくなった生鮮・日配食品等の寄贈実証の結果",
       "source": "PR TIMES",
       "category": "パパ・育児",
@@ -390,6 +856,21 @@
       ],
       "published": "2026-04-07 03:00",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBnUC1ncWE1dE16clNPMEhkdTNTX0trY0dwNTdzbWYxcElJaG9KbUhwSzEwTkxWYmZXYWc1MTJaSWpDc3VsYjhwa3FVQzg3UTNaa29iVWhZeTY1Z1VpMUhIZkRBZFlKR2xmaFE?oc=5"
+    },
+    {
+      "title": "SOMPOケア、入社式から生成AI活用に力点 本格化する介護職の創造的マインド養成",
+      "source": "介護ニュースJoint",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "SOMPOケア、入社式から生成AI活用に力点 本格化する介護職の創造的マインド養成 介護ニュースJoint／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-07 02:56",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xMDhvRUUzTGZzZDdfaE02UzZqTTlnLW01LW9xWUxwOVNPcW5yYmVxRXNoZnBycXZFUGpWLUhDc0RBNVQ3cndySGJSeUlJVVdVSUdjcmJn?oc=5"
     },
     {
       "title": "FOODEX JAPAN 2026で注目！デンマークの食品ブランド | Munkebo Seafood・Østerberg・Fynboを紹介",
@@ -409,21 +890,36 @@
       "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5Ya18xd0xsUS1qeVdEV3dJQVVnNWwxbE9ISWJuaEttNUhRdzFtenhjY1VMc2xCQ3E4aUh1cXZFd1Q5Zw?oc=5"
     },
     {
-      "title": "【岡山・津山】店内の冷凍食品・アイスが90分間食べ放題！！「チン！するレストランinマルイ ウエストランド店」開催！",
+      "title": "FOOD×MOVIE 北海道発！食と映像の魅力を味わう祭典！「HOKKAIDO FOOVIE FESTIVAL 2026」11月6日〜8日に開催！コンペティション作品募集開始！",
       "source": "PR TIMES",
       "category": "料理・食",
-      "subcategory": "話題",
-      "summary": "【岡山・津山】店内の冷凍食品・アイスが90分間食べ放題！！「チン！するレストランinマルイ ウエストランド店」開催！ PR TIMES／事業視点: レシピ活用, 発信ネタ",
+      "subcategory": "AI/DX",
+      "summary": "FOOD×MOVIE 北海道発！食と映像の魅力を味わう祭典！「HOKKAIDO FOOVIE FESTIVAL 2026」11月6日〜8日に開催！コンペティション作品募集開始！ P／事業視点: AI活用, レシピ活用",
       "business_tags": [
-        "recipe_business",
-        "content_marketing"
+        "ai_utilization",
+        "recipe_business"
       ],
       "business_tag_labels": [
-        "レシピ活用",
-        "発信ネタ"
+        "AI活用",
+        "レシピ活用"
       ],
-      "published": "2026-04-07 02:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBITXBJR1prRWUyTno2eDhBY1o0S2diSmxfTEtfajN5WHFoWkdWYjd3Q0Nkd0M2OWpQSGFmX1lFSWhadnRzMnZnd0Q0c0NxZVZlU3ozSXdteGtCSW9Jdk5HdkVacUlycVctOEE?oc=5"
+      "published": "2026-04-07 02:45",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yRTMwWmd6ZTlTTGhBdmRTV2U2R0lwOW5tdWNJNjVrY245LWttX0xNQ25jNjF6TGx5bVVoSWZheG5pMFJpb2Q4RmNjR3lTeExLX1EzRWdlSGFyRThXYXV3c0dTZ0NQY2kwWlE?oc=5"
+    },
+    {
+      "title": "観光に向かっていた家族5人 子ども3人は後部座席･妻は助手席に… 新名神の6人死亡事故 三重",
+      "source": "TBS NEWS DIG",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "観光に向かっていた家族5人 子ども3人は後部座席･妻は助手席に… 新名神の6人死亡事故 三重 TBS NEWS DIG／事業視点: 共食・家庭",
+      "business_tags": [
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "共食・家庭"
+      ],
+      "published": "2026-04-07 02:26",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xdEUwblpjWmduWjItbWx6dzBva0hfcG1tbElxb0sxZVg1NXpuUk1ZNFJ5ZWZZaUhGZ1RCbnpMV0hQYjNITUxNbDUyOGVxWTVTTUJhOTNOMU9tMWVjalNUOGdDUTBwYjQ?oc=5"
     },
     {
       "title": "シルタス、日清オイリオ・ギフティから資金調達〜購買データ×栄養解析で「買い物から健康をつくる」未病インフラ構築へ〜",
@@ -458,6 +954,23 @@
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE42RnBETVp4UlFYcENGVExfOHJxaW9uWHpfeWtZTFUwNWNtM0JnSW51M09DQldwNEctb25rQzRsWVdMRXJON2cyRXNwR3ctUTRQUk5LQi0yeDJtcnh0dkE0aUZDYkdVQlk1RVE?oc=5"
     },
     {
+      "title": "【岡山・津山】店内の冷凍食品・アイスが90分間食べ放題！！「チン！するレストランinマルイ ウエストランド店」開催！",
+      "source": "PR TIMES",
+      "category": "料理・食",
+      "subcategory": "話題",
+      "summary": "【岡山・津山】店内の冷凍食品・アイスが90分間食べ放題！！「チン！するレストランinマルイ ウエストランド店」開催！ PR TIMES／事業視点: レシピ活用, 発信ネタ",
+      "business_tags": [
+        "recipe_business",
+        "content_marketing"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "発信ネタ"
+      ],
+      "published": "2026-04-07 02:00",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBITXBJR1prRWUyTno2eDhBY1o0S2diSmxfTEtfajN5WHFoWkdWYjd3Q0Nkd0M2OWpQSGFmX1lFSWhadnRzMnZnd0Q0c0NxZVZlU3ozSXdteGtCSW9Jdk5HdkVacUlycVctOEE?oc=5"
+    },
+    {
       "title": "AI開発、普及へ個人情報活用 政府、規制緩和で改正法案決定（共同通信）",
       "source": "Yahoo!ニュース",
       "category": "AI・テクノロジー",
@@ -476,10 +989,10 @@
     },
     {
       "title": "知らなきゃ損？ 栄養を逃がさない玉ねぎの辛み抜き方法",
-      "source": "weathernews.jp",
+      "source": "ウェザーニュース",
       "category": "料理・食",
       "subcategory": "健康",
-      "summary": "知らなきゃ損？ 栄養を逃がさない玉ねぎの辛み抜き方法 weathernews.jp／事業視点: 健康経営, レシピ活用",
+      "summary": "知らなきゃ損？ 栄養を逃がさない玉ねぎの辛み抜き方法 ウェザーニュース／事業視点: 健康経営, レシピ活用",
       "business_tags": [
         "health_management",
         "recipe_business"
@@ -505,6 +1018,21 @@
       ],
       "published": "2026-04-07 01:30",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Ja01OdW1YT2gyOGxoT0oxU09VWW9hcGdvb3lqYjhxd0JGWmdoc0o4UF8tVlktWU5kVDc2aEExdGRURlRoNDMyMlhJM01oNF91YklWZFRYOW9pcENOVHdUOVFaQWRKNFE1Uzdta0RMbw?oc=5"
+    },
+    {
+      "title": "都会「箱の男」（第10回） 箱に隠された家族の闇は",
+      "source": "好書好日",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "都会「箱の男」（第10回） 箱に隠された家族の闇は 好書好日／事業視点: 共食・家庭",
+      "business_tags": [
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "共食・家庭"
+      ],
+      "published": "2026-04-07 01:11",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE16X2NVSnhTLS1iWE1mQ3ExUllKX0VqTkJ3d29fbG5DRlQ5b3diWTZSOFRYVHVUNkNfYV9Tblc1QmkydktVbFJudTBxRDRQUEFU?oc=5"
     },
     {
       "title": "ホリイフードサービス--- 鮨桝食品株式会社の株式取得（子会社化）に関するお知らせ(フィスコ)",
@@ -579,6 +1107,23 @@
       "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5SQmZJSndvYmRXbGR1NzdWTnFOZHp5dmduOFVLbDN6LXhva3FNNXFDVVBaeGpRTHhHa3BKd1hvbG55aDhPdmc?oc=5"
     },
     {
+      "title": "ヴィーガン食材のエリア設置＆TVディレクターとの「自社商品の発信術」セミナー実施！【VEG FOOD EXPO 2026】4/15-17＠東京ビッグサイト",
+      "source": "PR TIMES",
+      "category": "料理・食",
+      "subcategory": "レシピ・料理",
+      "summary": "ヴィーガン食材のエリア設置＆TVディレクターとの「自社商品の発信術」セミナー実施！【VEG FOOD EXPO 2026】4/15-17＠東京ビッグサイト PR TIMES／事業視点: レシピ活用, 企業研修",
+      "business_tags": [
+        "recipe_business",
+        "corporate_training"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "企業研修"
+      ],
+      "published": "2026-04-06 23:30",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0wNHpka1JZZUlVM19KeGxJeThvZHUtMVdFOW1KRFFKUks4Q1QwM1hNV09PVUk4aE1tR2ZQeTFUV3JzaFFKNDJrT2xDNTZzOEtiZTJuTU5FNURCMS01TU1JX2tnY25VRUtMS2c?oc=5"
+    },
+    {
       "title": "オープンロジ、全社員の生成AI活用を推進",
       "source": "LOGISTICS TODAY",
       "category": "AI・テクノロジー",
@@ -607,6 +1152,25 @@
       ],
       "published": "2026-04-06 22:33",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE04WlhsbkJ2M1NSTURiSk5zakJYUlFLQ2F1WDJEbFdSOC1YX21iWmMzRkxhSUFuTXBrMU42VUxpUjI0SFdrWlZvZW5RZG14SmtZRTZkWXVn?oc=5"
+    },
+    {
+      "title": "オイシックス、新潟県と包括連携協定を締結。県産品を使った商品開発＋スポーツ×食を掛け合わせた施策で地域活性化を加速",
+      "source": "ｄメニューニュース",
+      "category": "パパ・育児",
+      "subcategory": "話題",
+      "summary": "オイシックス、新潟県と包括連携協定を締結。県産品を使った商品開発＋スポーツ×食を掛け合わせた施策で地域活性化を加速 ｄメニューニュース／事業視点: 共食・家庭, 発信ネタ, 商品開発",
+      "business_tags": [
+        "family_communication",
+        "content_marketing",
+        "product_development"
+      ],
+      "business_tag_labels": [
+        "共食・家庭",
+        "発信ネタ",
+        "商品開発"
+      ],
+      "published": "2026-04-06 22:30",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZ1RkVHNQZVJBWWN2STd0cTI5eEUzVy1KZUYwTG81cEt1V0szaXpjcm1iQUxsY0cwS2xMZDczVjl5YUt0cHRmYXFRMjhKdmwySWloaXVveVBQMXVaMEZqREtzbGFWbkRibnVlSUEtdDVBdUc2QkVXVkdfVnU2YzNaNE8taS1xSnc3WHhxSi1sTmwxaFVQeXNRbU8tSF9hTFhBa2owUFRlLWJCazQtV3o0WWl3VWjSAbQBQVVfeXFMTWdUZFRzUGVSQVljdkk3dHEyOXhFM1ctSmVGMExvNXBLdVdLM2l6Y3JtYkFMbGNHMEtsTGQ3M1Y5eWFLdHB0ZmFxUTI4SnZsMklpaGl1b3lQUDF1WjBGakRLc2xhVm5EYm51ZUlBLXQ1QXVHNkJFV1ZHX1Z1NmMzWjRPLWktcUp3N1h4cUotbE5sMWhVUHlzUW1PLUhfYUxYQWtqMFBUZS1iQms0LVd6NFlpd1Vo?oc=5"
     },
     {
       "title": "男性の家事・育児参加は進んだが…夫の疑問「なぜ妻は効率が悪いのか？」に潜むズレ《終わらぬ子育てのタイパ議論》",
@@ -675,6 +1239,21 @@
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94dFJPTWpzSXRLYXhtSmtQYWZhYkswU192MW91QlFFSUhJQ1JuMm9DeXZOSTRwUjNkMHM5T3BqMjFVSk94V3Z5cFBELUd6eDZ4d1VLY3F1MzdhTE5oZ0dVODEtOXIzUWtQ?oc=5"
     },
     {
+      "title": "地元食材ふんだん会席料理 志摩・佐藤養殖場が「別亭まとや」オープン",
+      "source": "中日新聞Web",
+      "category": "料理・食",
+      "subcategory": "レシピ・料理",
+      "summary": "地元食材ふんだん会席料理 志摩・佐藤養殖場が「別亭まとや」オープン 中日新聞Web／事業視点: レシピ活用",
+      "business_tags": [
+        "recipe_business"
+      ],
+      "business_tag_labels": [
+        "レシピ活用"
+      ],
+      "published": "2026-04-06 20:05",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ickdtUVVBTUZNZVBKTUV0QWZ1OEkxQ3p6TE9TM00xQlBWV2M1WmxLVGpuXzQyZ0pOS0dkdlAxU0lRUXVaRm1mWW5OVDZIc21CbHl3dQ?oc=5"
+    },
+    {
       "title": "「明るい家族。信じたくない」犠牲となった一家に知人は悲痛 新名神事故",
       "source": "中日新聞Web",
       "category": "パパ・育児",
@@ -705,6 +1284,21 @@
       ],
       "published": "2026-04-06 20:00",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE53SHl5MzF1b1M4NW5LYmlKVEY3dklmRVJTbUxvck9sUlJOZ1VOWW9lQi1VQVRULXZURHJYbEJ3ZnN0UkRNVVZGN0lzRFRFRnlQOXU0RDR3?oc=5"
+    },
+    {
+      "title": "いきなり完成形出すAI、建築設計に変化もたらす 「たかがツール」は危険",
+      "source": "日経クロステック",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "いきなり完成形出すAI、建築設計に変化もたらす 「たかがツール」は危険 日経クロステック／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-06 20:00",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBPQ1pub0RCcHNPSXFackIwc3BjcmVyOGRDWE5HUTNwdDBmYmk5Z3FkeWd2UVJvMVdwOEpjMHJNWnJNY1pMdWJCNThKZW9uYS1fMThpU2VfTXVhS184bDgwTTVxc2dMd3FUaGIxTw?oc=5"
     },
     {
       "title": "朝日新聞社長「AI全振り」宣言 スーパー記者構想の狙いは",
@@ -771,6 +1365,23 @@
       "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1hdDEtdXJmcjExS1B3dC1vRkgtTWdjZmo3VnlTbDA4MmZTT01iejUzb2w1LUcyZWIwZTJhemttNEFpanVVeHBJSkF1czhwZw?oc=5"
     },
     {
+      "title": "総務省事業においてSNS空間の可視化と偽・誤情報対策を行う独自技術を開発",
+      "source": "sakana.ai",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "総務省事業においてSNS空間の可視化と偽・誤情報対策を行う独自技術を開発 sakana.ai／事業視点: AI活用, 商品開発",
+      "business_tags": [
+        "ai_utilization",
+        "product_development"
+      ],
+      "business_tag_labels": [
+        "AI活用",
+        "商品開発"
+      ],
+      "published": "2026-04-06 15:00",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5oV2Y2cTFETDRFRndBLTgtanl2UW0xUG5xM041TE9DaDVrWEplNlBaSUpzMnpQNXdnZkl4UWZBdkFrMXc4?oc=5"
+    },
+    {
       "title": "イトーヨーカ堂「冷凍食品」強化　フードコート「ポッポ」の“ブランド力”活用",
       "source": "ｄメニューニュース",
       "category": "料理・食",
@@ -805,11 +1416,45 @@
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9aaWpRQkp3OVQwY3c4SUppUFc2SkdvdHVlcm1rS2NzZ3A4Vk00ZGtMdW1NNlYxWXVmdi1iMWVRLVA4SmRDT21pOGtIcnBOaVhveU5ZN0RZMjhlT2hTLWZNTGZZWDdOeWpMWU9GT3RKdjhBakVSUE11SU9Xbw?oc=5"
     },
     {
+      "title": "イトーヨーカ堂「冷凍食品」強化 フードコート「ポッポ」の“ブランド力”活用",
+      "source": "TBS NEWS DIG",
+      "category": "料理・食",
+      "subcategory": "話題",
+      "summary": "イトーヨーカ堂「冷凍食品」強化 フードコート「ポッポ」の“ブランド力”活用 TBS NEWS DIG／事業視点: レシピ活用, 発信ネタ",
+      "business_tags": [
+        "recipe_business",
+        "content_marketing"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "発信ネタ"
+      ],
+      "published": "2026-04-06 14:00",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9DQnMwRzQzV2dfZU5WNDUzSW5BN0J2LVlJNThuWE10REc2ZjRWS2FSejRNaHNMUDVFc1NDQnZnV09pWV9zb1V1TUt4Y3JCdi0tOHZaU1pXMA?oc=5"
+    },
+    {
+      "title": "AIで多様な生活者像を再現する新ペルソナを開発 - News（ニュース） - 電通ウェブサイト",
+      "source": "dentsu.co.jp",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "AIで多様な生活者像を再現する新ペルソナを開発 - News（ニュース） - 電通ウェブサイト dentsu.co.jp／事業視点: AI活用, 商品開発",
+      "business_tags": [
+        "ai_utilization",
+        "product_development"
+      ],
+      "business_tag_labels": [
+        "AI活用",
+        "商品開発"
+      ],
+      "published": "2026-04-06 13:41",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5XYkxhOTFDWm1VX1Y5MnlGZV9TSndfQWJlMXliaFFQX2tTYmxfenhwVXhDeXlyMi1IUzhCejhPX1VqSEhTS2pOMjI3bXloY005TDE5YlJLUThmOW1mVTZ2TXQ5X2tmVF9Hb0xz?oc=5"
+    },
+    {
       "title": "魚の“助け合い子育て”は何度も進化していた―アフリカの古代湖シクリッドで小型化と少産化が社会の複雑性に関与",
-      "source": "kyoto-u.ac.jp",
+      "source": "京都大学",
       "category": "パパ・育児",
       "subcategory": "育児・家庭",
-      "summary": "魚の“助け合い子育て”は何度も進化していた―アフリカの古代湖シクリッドで小型化と少産化が社会の複雑性に関与 kyoto-u.ac.jp／事業視点: 共食・家庭",
+      "summary": "魚の“助け合い子育て”は何度も進化していた―アフリカの古代湖シクリッドで小型化と少産化が社会の複雑性に関与 京都大学／事業視点: 共食・家庭",
       "business_tags": [
         "family_communication"
       ],
@@ -856,6 +1501,53 @@
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSazN4eTlOc1BudWRWLXFBeURIVThEQ1pldDZDekhZRHV3bi02Wl95MDJFTXh3Rkl1UGVvc0JLOEgyVWU4RjEycE9HTmxWN3hvSlhELXVBVVZIVy03NzFLOVowVks4SW41TW9MMUZzMDZKdmZFUC0wQkdkbFowVUk?oc=5"
     },
     {
+      "title": "「亀梨に見えた」19歳のパパ→20年後の現在は…… まさかの姿に「これは次元が違う」「普通に付き合いたい」（ねとらぼ）",
+      "source": "Yahoo!ニュース",
+      "category": "パパ・育児",
+      "subcategory": "育児・家庭",
+      "summary": "「亀梨に見えた」19歳のパパ→20年後の現在は…… まさかの姿に「これは次元が違う」「普通に付き合いたい」（ねとらぼ） Yahoo!ニュース／事業視点: 共食・家庭",
+      "business_tags": [
+        "family_communication"
+      ],
+      "business_tag_labels": [
+        "共食・家庭"
+      ],
+      "published": "2026-04-06 10:20",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1mUDZkNGNQY3lmRVRvNEJhOWpOaWlaekVJU1NFcHhkMmswWURmV1NSRVZoMUVMNXZQMzNRTUx5MDVqaEJGQkhaSlg3V2w5b0R2STBKQ2VzTnZrajZ1cExIR2lCQXNxdWlaemFKQUtwX3d6TDhCODNQQTV1b0hpQTQ?oc=5"
+    },
+    {
+      "title": "セカンドハーベスト・ジャパン フードバンク認証制度の施行を受けフードセーフティネット構築に向けた取り組みを加速",
+      "source": "ニコニコニュース",
+      "category": "料理・食",
+      "subcategory": "話題",
+      "summary": "セカンドハーベスト・ジャパン フードバンク認証制度の施行を受けフードセーフティネット構築に向けた取り組みを加速 ニコニコニュース／事業視点: レシピ活用, 発信ネタ",
+      "business_tags": [
+        "recipe_business",
+        "content_marketing"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "発信ネタ"
+      ],
+      "published": "2026-04-06 10:15",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9uTzlibHgtOWlSMWROU0V3OXVhOFNvdmxpSFF5QnhBZW1qTEVXM25DUkktZmVVdjAxdUhQMmt4MG1Wd3JqSHNWUnc0VEt2cFE2MktXTg?oc=5"
+    },
+    {
+      "title": "日本初！AIとつくる多度学園の校歌完成！",
+      "source": "city.kuwana.lg.jp",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "日本初！AIとつくる多度学園の校歌完成！ city.kuwana.lg.jp／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-06 10:01",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTkpySGVZOWdLLWN4SkdiMksyTFdNcnFsbnFERXJWWDJVaW40M0NUdWNLM0J4eHhDZUNnNEl2c3dRTXV1QTYxbDJ1YVhILVNqcXl1VXY4dElpaFFOTjlFT2VuSVVYTFk0eW9ubllpUHdpVlgzbUFja1NqbHRYVG5RdEFtR2M3T0VPcXl1cVJLM29sS1VFdFRn?oc=5"
+    },
+    {
       "title": "高級食材キャビアの生産に中東情勢の影 電気代とエサ代が高騰し「今から厳しくなる」と懸念",
       "source": "TBS NEWS DIG",
       "category": "料理・食",
@@ -869,6 +1561,70 @@
       ],
       "published": "2026-04-06 10:00",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEYjE5ek1VQllPc2p6TTd4OTZXRU5QeXFhUzJZUEx3X2pzbDItM2FmSGx4ZHpZVzRWeS1veGJqaFJhLWJ4Sll3dEZyN1loVUJxQXhYMEdGYW9fZw?oc=5"
+    },
+    {
+      "title": "地元食材と手作りにこだわるおしゃれカフェ 南島原市「カフェsui（すい）」",
+      "source": "NCC長崎文化放送",
+      "category": "料理・食",
+      "subcategory": "レシピ・料理",
+      "summary": "地元食材と手作りにこだわるおしゃれカフェ 南島原市「カフェsui（すい）」 NCC長崎文化放送／事業視点: レシピ活用",
+      "business_tags": [
+        "recipe_business"
+      ],
+      "business_tag_labels": [
+        "レシピ活用"
+      ],
+      "published": "2026-04-06 09:39",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5YRzhtSlJITmJXRFZydFhFa1RNRVgxZWtxS0JIdXhFSktvVHpnSVNjOWdRdXZPcC1OQjJLRS1LbW11X3AwYURIU1Rkd2ZZTnFpbDJ1Z3lDOGs0OVpY?oc=5"
+    },
+    {
+      "title": "AIが生んだ「1人スタートアップ」──3人の創業者が示した新常識",
+      "source": "Forbes JAPAN",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "AIが生んだ「1人スタートアップ」──3人の創業者が示した新常識 Forbes JAPAN／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-06 09:00",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UMy1xY1JCOEpTMG55a2gyVWhNZzJPLWtkbmpWSTlRUGw2cHBFVUJfZ2dyMmppbEJJR3RsUG5ya0o3ZVZad3cwRmttdWp0Z3RrYmFfakpMNWQ?oc=5"
+    },
+    {
+      "title": "いなばペットフード 猫ちゃんの「CIAO ちゅ～るスープ」新発売！",
+      "source": "PR TIMES",
+      "category": "料理・食",
+      "subcategory": "新商品",
+      "summary": "いなばペットフード 猫ちゃんの「CIAO ちゅ～るスープ」新発売！ PR TIMES／事業視点: レシピ活用, 発信ネタ, 商品開発",
+      "business_tags": [
+        "recipe_business",
+        "content_marketing",
+        "product_development"
+      ],
+      "business_tag_labels": [
+        "レシピ活用",
+        "発信ネタ",
+        "商品開発"
+      ],
+      "published": "2026-04-06 08:57",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nQnlsZU55ZUpfN1VjemZrdkRLb1R0X2RMNnY3Z21XNHN4VE5WdjlKdXQ5RGstUTFMRmpENEVUQTNJbm00NDAwMHBqS09SdmF5SDZtZXlWUXJtOVNFTGNfazZQMkVQc3Q2aGc?oc=5"
+    },
+    {
+      "title": "病薬向け「生成AI活用ガイダンス」公表",
+      "source": "PHARMACY NEWSBREAK",
+      "category": "AI・テクノロジー",
+      "subcategory": "AI/DX",
+      "summary": "病薬向け「生成AI活用ガイダンス」公表 PHARMACY NEWSBREAK／事業視点: AI活用",
+      "business_tags": [
+        "ai_utilization"
+      ],
+      "business_tag_labels": [
+        "AI活用"
+      ],
+      "published": "2026-04-06 08:13",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9FS1RONlhsZjdLN3lRYk5Sak96TnpGNzMxeTUxYXhHMFBxOUlIV0Z2NmhjWkZLeEdOb25SQXBBWDhQWXB3Q3g5MmZn0gFPQVVfeXFMTlRIc09SejhUbUZJMDFscWFUOGFWTWowOGZya0VyVkp1YXp1YVYzS01oWVdSTW94NmZYU2dNbXY5STBCRHBaR1c1Z2dCOUEwMA?oc=5"
     },
     {
       "title": "【4/23開催】「AI活用の成否を分ける“接続設計”」AIを全社の業務プロセスに組み込み、成果を出すためのポイントを解説",
@@ -886,793 +1642,19 @@
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OYTJHQnRNZ1BNV1gzVUh0VzluYWZIVkJqZFNjNE05bFBBTWVJTkVyT2FacnQ1ZENPVV9RSVphT19UMG5VLXFqRTlBeVNPRm9OUHhVLVA2WnZJM2xrQm9PMFBNc1Z0T1E4U1E?oc=5"
     },
     {
-      "title": "新名神6人死亡事故 身元判明 静岡県の家族5人と埼玉県の男性 三重県警",
-      "source": "TBS NEWS DIG",
-      "category": "パパ・育児",
-      "subcategory": "育児・家庭",
-      "summary": "新名神6人死亡事故 身元判明 静岡県の家族5人と埼玉県の男性 三重県警 TBS NEWS DIG／事業視点: 共食・家庭",
-      "business_tags": [
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "共食・家庭"
-      ],
-      "published": "2026-04-06 07:23",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1iem9pZDlDVGJGeDdCeU5oaE9ObWJHRkY4VGdWWlJZb0M1MENpdFRmTFJvb3NyVGZ4M1NUVFhLaXpxcTczXzU2a0RpX29LdjZVTjZkSkZMZw?oc=5"
-    },
-    {
-      "title": "目次（子育て世帯市内引越し応援事業）",
-      "source": "city.fukuoka.lg.jp",
-      "category": "パパ・育児",
-      "subcategory": "育児・家庭",
-      "summary": "目次（子育て世帯市内引越し応援事業） city.fukuoka.lg.jp／事業視点: 共食・家庭",
-      "business_tags": [
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "共食・家庭"
-      ],
-      "published": "2026-04-06 07:00",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPeURiTkd0ZTBMX1BvS0Eza0FaeWNTTE5fNlNLU0JhRTg3LUZZMUFLS1AtZTVfbVdDb0dUdVVna2tpeUJpLWo5RFFMRnFwVV9ydzVadk9FR0FOcFNSVGt3UGtpMGphWlplOHVoU0c2MFhUbmhSRXNrdFdZUjZJX1c4NTZKUkd1SV8yZ2c?oc=5"
-    },
-    {
-      "title": "「牛乳をもっと家庭で」、さとふるが料理教室",
-      "source": "酪農乳業速報",
-      "category": "パパ・育児",
-      "subcategory": "レシピ・料理",
-      "summary": "「牛乳をもっと家庭で」、さとふるが料理教室 酪農乳業速報／事業視点: オンライン料理教室, 共食・家庭, レシピ活用",
-      "business_tags": [
-        "online_cooking",
-        "family_communication",
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "オンライン料理教室",
-        "共食・家庭",
-        "レシピ活用"
-      ],
-      "published": "2026-04-06 07:00",
-      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5kZktUVFNFdFoyWl91RllWTzVrQk12UWFZZjNRWnF0YndkYzBfZURsc2RCc3ZaRldqcVNmQWpPNWpWcWx1NnBxYXJpRQ?oc=5"
-    },
-    {
-      "title": "「ポッポ」の今川焼きやポテトフライ、冷凍食品に…イトーヨーカ堂が新商品１１品",
-      "source": "読売新聞オンライン",
-      "category": "料理・食",
-      "subcategory": "新商品",
-      "summary": "「ポッポ」の今川焼きやポテトフライ、冷凍食品に…イトーヨーカ堂が新商品１１品 読売新聞オンライン／事業視点: オンライン料理教室, レシピ活用, 発信ネタ",
-      "business_tags": [
-        "online_cooking",
-        "recipe_business",
-        "content_marketing",
-        "product_development"
-      ],
-      "business_tag_labels": [
-        "オンライン料理教室",
-        "レシピ活用",
-        "発信ネタ",
-        "商品開発"
-      ],
-      "published": "2026-04-06 06:55",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBuWl85cnJJOXdiakV5dGtxbHpUMTlCdXhGaFJhd0lIcDVXdUtudXUxMWNJR0tEcURZdlV2Z3NLeGpxcElDMzFGVTdkYlFEX0ZQZmh0bFZJNjFqUzdaVmhTUm15bTg?oc=5"
-    },
-    {
-      "title": "イトーヨーカ堂、「ポッポ」の冷凍食品11品販売 今川焼きなど",
-      "source": "日本経済新聞",
-      "category": "料理・食",
-      "subcategory": "話題",
-      "summary": "イトーヨーカ堂、「ポッポ」の冷凍食品11品販売 今川焼きなど 日本経済新聞／事業視点: レシピ活用, 発信ネタ",
-      "business_tags": [
-        "recipe_business",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "レシピ活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-06 06:29",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBPcnVLZ3hkQUJWXzBwM0VSelNVbGZhWUlSa3N5WmlQWlNCMTdNc2FUczRzek1oSUplREt4dGhiQWR4WnlGeUZrZjdLZzgwNUhZLXRQdlZXbDNYb1VrTVVMQnBpNklRdXhTbndTZg?oc=5"
-    },
-    {
-      "title": "「食育実践優良法人」に初認定",
-      "source": "ニコニコニュース",
-      "category": "パパ・育児",
-      "subcategory": "教育",
-      "summary": "教育に関する話題。パパ・育児分野で注目されるニュースです。／事業視点: 食育, 共食・家庭",
-      "business_tags": [
-        "food_education",
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "食育",
-        "共食・家庭"
-      ],
-      "published": "2026-04-06 06:15",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aY2NaUVlxR2lJalVRbDFWWlNndkdTekRCZFloYXdvdHNrQkRUZnlOb0lLaGJmVTJhYU44eUoxLXRpWmg5eGpFQzJZaUlSbllyZmZLSQ?oc=5"
-    },
-    {
-      "title": "イトーヨーカドー 新商品／フードコートブランド「ポッポ」の冷食11品目を発売、軽食ニーズ狙う",
-      "source": "流通ニュース",
-      "category": "料理・食",
-      "subcategory": "新商品",
-      "summary": "イトーヨーカドー 新商品／フードコートブランド「ポッポ」の冷食11品目を発売、軽食ニーズ狙う 流通ニュース／事業視点: レシピ活用, 発信ネタ, 商品開発",
-      "business_tags": [
-        "recipe_business",
-        "content_marketing",
-        "product_development"
-      ],
-      "business_tag_labels": [
-        "レシピ活用",
-        "発信ネタ",
-        "商品開発"
-      ],
-      "published": "2026-04-06 06:10",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1NeHVIaHFjY3VyNXRFQ19mNkp6anl4blltY2tkbkNDZTlINDByUHBhUU82bFBmTm8zQTVpNlVqNGIycC03VUJ0U2NUR0wzTlMyRlBYX0kzUXdiZw?oc=5"
-    },
-    {
-      "title": "Copilot の全社展開と Copilot Studio による内製開発で、AI 活用を当たり前とする企業文化を醸成する OBC の取り組み | Microsoft Customer Stories",
-      "source": "Microsoft",
+      "title": "週刊生成AI with AWS – 2026/3/30 週 | Amazon Web Services ブログ",
+      "source": "Amazon Web Services",
       "category": "AI・テクノロジー",
       "subcategory": "AI/DX",
-      "summary": "Copilot の全社展開と Copilot Studio による内製開発で、AI 活用を当たり前とする企業文化を醸成する OBC の取り組み | Microsoft Custom／事業視点: AI活用, 商品開発",
-      "business_tags": [
-        "ai_utilization",
-        "product_development"
-      ],
-      "business_tag_labels": [
-        "AI活用",
-        "商品開発"
-      ],
-      "published": "2026-04-06 06:04",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNblpRdzZNbXRfZ1FpUXZCWjU1OS1rWTlEV2pVWDB5SXBpeHlnVGlkVk5wcFNmTjdHRnVZZ2JNMkxnSWJ4NW1XSnVuTHdtWkxsejBFM3RJQXJQcThoSllUemJ4MkppVzFqa2pCODBqUGtKTC1TM1NwTDZSbVVNYlRCV284NGNPZw?oc=5"
-    },
-    {
-      "title": "生成AI利用率、ついに5割超え 15～69歳調査 もはや使っていない人が少数派（CNET Japan）",
-      "source": "Yahoo!ニュース",
-      "category": "AI・テクノロジー",
-      "subcategory": "調査",
-      "summary": "生成AI利用率、ついに5割超え 15～69歳調査 もはや使っていない人が少数派（CNET Japan） Yahoo!ニュース／事業視点: AI活用, 発信ネタ",
-      "business_tags": [
-        "ai_utilization",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "AI活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-06 05:30",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ldER1bmh3cmVKcndsUDlrd3EyZzY2bkhrR1RPeDU2ODVQVlJpOVN3VElDTGc3Z185cDE5Q3ZZMmtNU0poVzN3MFJYdFg5d3ctem1Ca2pMRFF1bFRQWkpQZ1p0eFdVN3lWMzRTeEFrQVhpcWFIZTVpUXdYUjJEN0E?oc=5"
-    },
-    {
-      "title": "みずほFG、AI開発専門人材を400人体制へ倍増 自社開発「AIアシスタント」を導入へ（ビジネス＋IT）",
-      "source": "Yahoo!ニュース",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "みずほFG、AI開発専門人材を400人体制へ倍増 自社開発「AIアシスタント」を導入へ（ビジネス＋IT） Yahoo!ニュース／事業視点: AI活用, 商品開発",
-      "business_tags": [
-        "ai_utilization",
-        "product_development"
-      ],
-      "business_tag_labels": [
-        "AI活用",
-        "商品開発"
-      ],
-      "published": "2026-04-06 04:45",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1NTk1kSWRraGpqZEZTdWl0dWxnaVBhUGtnVzJoUERVYW96b2JYRDBiSUhEdFl3d0hrQWZNS1hrS1ktcDlqdXA4NWxhQWczeUprWDFJWWZzMi1OWTlFTWVFbEh6bnBtaGh5c0NPUERPUGQ5R0NNSHJhSUNzNVExems?oc=5"
-    },
-    {
-      "title": "全世代と事業主が負担する「子育て支援金」に疑問の声 来月から給与天引き始まる",
-      "source": "テレ朝NEWS",
-      "category": "パパ・育児",
-      "subcategory": "育児・家庭",
-      "summary": "全世代と事業主が負担する「子育て支援金」に疑問の声 来月から給与天引き始まる テレ朝NEWS／事業視点: 共食・家庭",
-      "business_tags": [
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "共食・家庭"
-      ],
-      "published": "2026-04-06 03:55",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1lVUJPazVfNFVwMUZOOXVva3ZiLVhGNHFiaUlHVUJSS0FBMnU4Q05SRnJfc1RZOHVVX2JrUUh1aVZQOThndW53TE1Ia21FZTBtemdSRjh6SE1XMGMyaHBjOUF3QlEwRkRlVU01WkZBajhNQQ?oc=5"
-    },
-    {
-      "title": "第５期県食育推進計画 働き盛り世代も対象に 食から始める健康あきた（２４）",
-      "source": "秋田魁新報電子版",
-      "category": "パパ・育児",
-      "subcategory": "健康",
-      "summary": "第５期県食育推進計画 働き盛り世代も対象に 食から始める健康あきた（２４） 秋田魁新報電子版／事業視点: 食育, 共食・家庭",
-      "business_tags": [
-        "food_education",
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "食育",
-        "共食・家庭"
-      ],
-      "published": "2026-04-06 03:30",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBoSzhyREhyYk9FakNsZUkzUGJQRHFCZDNrNXZkd3BPQTFray1UTU5PaWY0alg5UEhQemRpRUFQdXFKVzI5Q1dySjlmbW1LbGlDb3Rya1pzTjgxTjRpMnN3ZFpR?oc=5"
-    },
-    {
-      "title": "「食品ロス」愛媛県で目標量の４倍を削減、フードバンク・フードドライブに注力で達成…大手スーパーもAI発注システム導入",
-      "source": "読売新聞オンライン",
-      "category": "料理・食",
-      "subcategory": "AI/DX",
-      "summary": "「食品ロス」愛媛県で目標量の４倍を削減、フードバンク・フードドライブに注力で達成…大手スーパーもAI発注システム導入 読売新聞オンライン／事業視点: オンライン料理教室, AI活用, レシピ活用",
-      "business_tags": [
-        "online_cooking",
-        "ai_utilization",
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "オンライン料理教室",
-        "AI活用",
-        "レシピ活用"
-      ],
-      "published": "2026-04-06 02:50",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9lNHQ1RXZfYm9ldE55aEhTXzBzVnpjQ2luVmtMY0hyWGFieFN3YVFBbGNFOTlpbHZHZ2VTM25Oc0JacUp0SUlPX1VwWWRSMDU2TW9TZ2RKY3dPa0Q4emFvdTRjUjYweGkyaDU3ckhZRG5ZUQ?oc=5"
-    },
-    {
-      "title": "【きょうから発売】フードコートでおなじみ「ポッポ」を家で楽しめる　ポテトや今川焼きなど人気メニューが冷凍食品に",
-      "source": "ｄメニューニュース",
-      "category": "料理・食",
-      "subcategory": "新商品",
-      "summary": "【きょうから発売】フードコートでおなじみ「ポッポ」を家で楽しめる ポテトや今川焼きなど人気メニューが冷凍食品に ｄメニューニュース／事業視点: レシピ活用, 発信ネタ, 商品開発",
-      "business_tags": [
-        "recipe_business",
-        "content_marketing",
-        "product_development"
-      ],
-      "business_tag_labels": [
-        "レシピ活用",
-        "発信ネタ",
-        "商品開発"
-      ],
-      "published": "2026-04-06 02:41",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSTVhSkNBREwtbUdwVDBDNXcyVHByV2xRWmNnTjlIckhKbTgtS19pRVNTNEFGRDlGbmpSSTRqMjI2cU9CaktjRnFNMnRkXzRBSlJlbnRsa3poQWlSSGxqQ210aDVmd1lkMVZ4bzgwZE1QMVhLMGVRd0ZzNzZ4VENKctIBhgFBVV95cUxNclh0YXN6MDYwM0NQTzV5VzRuMms1R1RCMkpLSXdxUkc3aHVaaW1jdEc3QzRXWmc4b0dNSjJpWU9fNDczdlptRTBWVV9QV2NIOWpJR0poNTgtdjgyT204VjVWY3lXRTJwQ2xkMWwwNXlvcXBBMEU0UW1ON2dYMkN1N2g4TFdEQQ?oc=5"
-    },
-    {
-      "title": "【鎌倉女子大学】産学官連携による食育に関する公開シンポジウムを開催 ―家政学部管理栄養学科学生が鎌倉運動栄養アプリ「鎌ップジュニア」の開発成果を発表―",
-      "source": "Digital PR Platform",
-      "category": "パパ・育児",
-      "subcategory": "健康",
-      "summary": "【鎌倉女子大学】産学官連携による食育に関する公開シンポジウムを開催 ―家政学部管理栄養学科学生が鎌倉運動栄養アプリ「鎌ップジュニア」の開発成果を発表― Digital PR Pla／事業視点: 健康経営, 食育, 共食・家庭",
-      "business_tags": [
-        "health_management",
-        "food_education",
-        "family_communication",
-        "product_development"
-      ],
-      "business_tag_labels": [
-        "健康経営",
-        "食育",
-        "共食・家庭",
-        "商品開発"
-      ],
-      "published": "2026-04-06 02:22",
-      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1uSUI3NVFQQ1Z0LXZITWxGQllBc29aNkZqdXI3SUZKSTZfU1NKYWQ0a1Rzd0dEZFV1Qk9sUWtWY2E0SFk?oc=5"
-    },
-    {
-      "title": "MAHAで揺れる米食品業界、GRAS見直しとGLP-1普及で企業が直面する課題｜米国フードテック・現地レポート（4）",
-      "source": "Foovo",
-      "category": "料理・食",
-      "subcategory": "調査",
-      "summary": "MAHAで揺れる米食品業界、GRAS見直しとGLP-1普及で企業が直面する課題｜米国フードテック・現地レポート（4） Foovo／事業視点: レシピ活用, 発信ネタ",
-      "business_tags": [
-        "recipe_business",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "レシピ活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-06 02:20",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vZVplNDlpQkM5Tm1qMnpBSnhxYzlheVdkWHpYaU5sdjFPZ09VM1ZjS1FSenhTWURPS1lMd3ljWHVhb3Z4Y280dDNkSi1VUUR5QTl4VHBCQjlYTDd6RE4yWHZYTjJCaXFZS1E?oc=5"
-    },
-    {
-      "title": "【トランスコスモス】AI活用で加速する営業支援DXを5月14日（木）に開催",
-      "source": "PR TIMES",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "【トランスコスモス】AI活用で加速する営業支援DXを5月14日（木）に開催 PR TIMES／事業視点: AI活用",
+      "summary": "週刊生成AI with AWS – 2026/3/30 週 | Amazon Web Services ブログ Amazon Web Services／事業視点: AI活用",
       "business_tags": [
         "ai_utilization"
       ],
       "business_tag_labels": [
         "AI活用"
       ],
-      "published": "2026-04-06 02:07",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1faFplMGNVeU5GWmdldXhQMGRSaXRCekVaeTZIT3QyWjF4d0traWMxc3g0UFV6ZnhYS0Z0aHMyLU9jMFZoTXRjMG5NVGZjMGF0NmRBZEZHX2h1OC1PYnVjRmZoaTZQWTFjTWc?oc=5"
-    },
-    {
-      "title": "物価高で57%が外食控え、62%が自炊にストレス。おうちごはんの満足度を変える30秒の“リクック（再調理）”に7割が関心。おうちごはんや外食に関する調査結果を公開 | 株式会社ライテックのプレスリリース",
-      "source": "PR TIMES",
-      "category": "料理・食",
-      "subcategory": "調査",
-      "summary": "物価高で57%が外食控え、62%が自炊にストレス。おうちごはんの満足度を変える30秒の“リクック（再調理）”に7割が関心。おうちごはんや外食に関する調査結果を公開 | 株式会社ライ／事業視点: レシピ活用, 発信ネタ",
-      "business_tags": [
-        "recipe_business",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "レシピ活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-06 02:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAwY2Jxa0xIM1Ata2R4MXVHa1J3ai1qUWl3bE9Ca0JPaTI4dk5DamJINUdhRU01WHpYYVQ3b19VU1NRQ0R6eGsxRUhfN0drYkdtX29qeFhKOFVlM3p5V1dmeUpieWJSdzJPekE?oc=5"
-    },
-    {
-      "title": "【 AI活用の先にあるのは･･･ 】第一生命経済研究所首席エコノミスト・熊野英生(財界オンライン)",
-      "source": "Yahoo!ファイナンス",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "【 AI活用の先にあるのは･･･ 】第一生命経済研究所首席エコノミスト・熊野英生(財界オンライン) Yahoo!ファイナンス／事業視点: オンライン料理教室, AI活用",
-      "business_tags": [
-        "online_cooking",
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "オンライン料理教室",
-        "AI活用"
-      ],
-      "published": "2026-04-06 02:00",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaVJIZ1AxWnBxS3V2TnV3OVF5V2g0TG1UUWExQUF2bk1TX0JhUGZvNzdwV2VLRU00cmliZFhTZ0FuNi1RUGtrb0RJbG5fMU90NDNnTF9acXA4YTRIel9NTUg2cHEyaFZOa1ZJRGQtdXdIdGFyOVlzczZxcTZyQzVwT2M4MWRfUkU?oc=5"
-    },
-    {
-      "title": "眠れない理由は“栄養不足”？ グランプロ睡眠美容クリニックが「睡眠×栄養検査」を開始",
-      "source": "PR TIMES",
-      "category": "料理・食",
-      "subcategory": "健康",
-      "summary": "眠れない理由は“栄養不足”？ グランプロ睡眠美容クリニックが「睡眠×栄養検査」を開始 PR TIMES／事業視点: 健康経営, レシピ活用",
-      "business_tags": [
-        "health_management",
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "健康経営",
-        "レシピ活用"
-      ],
-      "published": "2026-04-06 01:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5JcF9ncEhQdG9uaE1vQ01FTFBLMlotTGdfQjR5UFBtVHMteVZ1TDJYY0xCMVhEb0U0Y1EwVFJ3QkFBbzZreC13c0dxZ0J4Nmc3NmpRUVdYUWZEeFJZNkZNQU1kbGVyUU8xZ3c?oc=5"
-    },
-    {
-      "title": "乳幼児食のthe kindestから初の小中学生・親世代向けの商品が登場。栄養を支える「家族でごきげん鉄分パウダー」とジュニアプロテイン「manten Triple Care」を4月6日より新発売。",
-      "source": "PR TIMES",
-      "category": "パパ・育児",
-      "subcategory": "新商品",
-      "summary": "乳幼児食のthe kindestから初の小中学生・親世代向けの商品が登場。栄養を支える「家族でごきげん鉄分パウダー」とジュニアプロテイン「manten Triple Care」を4／事業視点: 健康経営, 共食・家庭, 発信ネタ",
-      "business_tags": [
-        "health_management",
-        "family_communication",
-        "content_marketing",
-        "product_development"
-      ],
-      "business_tag_labels": [
-        "健康経営",
-        "共食・家庭",
-        "発信ネタ",
-        "商品開発"
-      ],
-      "published": "2026-04-06 01:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRRXc5WkdaamhWbFY4ZWdKajFwMUdWNW53c3ptRG9kTU9Sb29kR2RZSEUtcldxTkFjOVE4TmNibHpDUGFCc29jdWdHUHRUZERZQUhiOUZ0SzhSamtIVTZlTmNHaG9yMXRrVFE?oc=5"
-    },
-    {
-      "title": "【賞金100万円】日本のAI活用の最先端を知る「Generative AI Conference TOKYO」を開催！",
-      "source": "PR TIMES",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "【賞金100万円】日本のAI活用の最先端を知る「Generative AI Conference TOKYO」を開催！ PR TIMES／事業視点: AI活用",
-      "business_tags": [
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "AI活用"
-      ],
-      "published": "2026-04-06 01:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qWlVQRHR5Wko0WUQ5STNZSFZxaUc2VWI3REk2YmhUU3JxWVV5Z1YwaUt4OFYtdTRKVTB6QU5XLXl0LWFKQ2RNN1JxNENsNTZkbUx5X3BQWC0yZzM1TzlVOTFsdTNPYWpQaHc?oc=5"
-    },
-    {
-      "title": "〈社説〉子育て支援金 負担の意義丁寧に語れ",
-      "source": "東京新聞デジタル",
-      "category": "パパ・育児",
-      "subcategory": "AI/DX",
-      "summary": "〈社説〉子育て支援金 負担の意義丁寧に語れ 東京新聞デジタル／事業視点: AI活用, 共食・家庭",
-      "business_tags": [
-        "ai_utilization",
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "AI活用",
-        "共食・家庭"
-      ],
-      "published": "2026-04-05 22:54",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mSzZad28tenZvVk00cGw2eTNjYV9raUMtQV84ODdBeHI2TlduMWt2b21meHMzVENOSHlmSjBCLTh6LVhvX3hySVI3eW5Bbmp3Mlhz?oc=5"
-    },
-    {
-      "title": "「１０００円の壁」崩れたラーメン業界、外食チェーン相次ぎ事業強化…「価格転嫁しやすさ」に商機",
-      "source": "読売新聞オンライン",
-      "category": "料理・食",
-      "subcategory": "話題",
-      "summary": "「１０００円の壁」崩れたラーメン業界、外食チェーン相次ぎ事業強化…「価格転嫁しやすさ」に商機 読売新聞オンライン／事業視点: オンライン料理教室, レシピ活用, 発信ネタ",
-      "business_tags": [
-        "online_cooking",
-        "recipe_business",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "オンライン料理教室",
-        "レシピ活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-05 20:00",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9SVVlLWGhac3E2RnZpZkZqUnZxWnR4QklrQ25MbDdSU2NpdlZDNlE3SDA3TjFyams5Tzdzb1hobXJxMVp3dnVUbEI3QUMtZy1maXQtU1VMNEdwQWhZXzhCSEM2alA?oc=5"
-    },
-    {
-      "title": "埼玉・坂戸の日本栄養大学、創立90年超で初の男子学生 55人が入学",
-      "source": "日本経済新聞",
-      "category": "料理・食",
-      "subcategory": "健康",
-      "summary": "埼玉・坂戸の日本栄養大学、創立90年超で初の男子学生 55人が入学 日本経済新聞／事業視点: 健康経営, レシピ活用",
-      "business_tags": [
-        "health_management",
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "健康経営",
-        "レシピ活用"
-      ],
-      "published": "2026-04-05 20:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9uaFVEYXdzeC1rbzlsZHlDS2lFd3dPcWxRM2tFX043S19YU0N4eE9DSExtQlZQajQzZ25DV1loX0UwWkFVWTUwVjJxVTlXY2lVaml5blpfeXI0SzhZZ1p2dnpITGxFSy10azdjTw?oc=5"
-    },
-    {
-      "title": "AI巨額投資にいら立つ投資家 見えぬ収益性、訴訟に問う",
-      "source": "日本経済新聞",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "AI巨額投資にいら立つ投資家 見えぬ収益性、訴訟に問う 日本経済新聞／事業視点: AI活用",
-      "business_tags": [
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "AI活用"
-      ],
-      "published": "2026-04-05 20:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1hdTRfanpiaFRMVFdSTHAweEdOaW42UGVDYzlRdEFoSDlTSGV2blNJM1J5dW1ER2lQWFRwVXM1RlpHaVd5X2htTnhxN1JtRnlCT2NoWDNTSHh5eHBHQWUzSmhBUVUtVlBLNVJ0UQ?oc=5"
-    },
-    {
-      "title": "AIが数学の未解決問題を相次いで解決、証明の鍵は「形式化」",
-      "source": "日経クロステック",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "AIが数学の未解決問題を相次いで解決、証明の鍵は「形式化」 日経クロステック／事業視点: AI活用",
-      "business_tags": [
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "AI活用"
-      ],
-      "published": "2026-04-05 20:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE82QUtNdzlXMnFfXzhYcUlmTGRUT0MwSld6SjZpa1BINjNpU0hsa0llTXo4S2ZGM3NBVGhhUUlWeG1MdlZadnpwVTJOWkJxMGUwRDN1Mk41ZHlSTDBJYWg1X3J6TE53OEZnNEh6UQ?oc=5"
-    },
-    {
-      "title": "東京ガス、高輪ゲートウェイでAI活用冷暖房 CO2回収し製品原料に",
-      "source": "日経ビジネス電子版",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "東京ガス、高輪ゲートウェイでAI活用冷暖房 CO2回収し製品原料に 日経ビジネス電子版／事業視点: AI活用",
-      "business_tags": [
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "AI活用"
-      ],
-      "published": "2026-04-05 20:00",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBlNTdISDRXQXc0MkgxUmZCaUZwUnUyZHRlNVA2YnJvei0yV0lWaWZUYzhEQkVjX2xfWWdNMEprZXZ4My1SbnlISmMzaG5KdzV2azJEUnVZeC1OZHNqcEJ5TUR2QWNBblU?oc=5"
-    },
-    {
-      "title": "AI活用進む保険業界、実験終え実装段階に 販売のあり方も再定義へ",
-      "source": "日本経済新聞",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "AI活用進む保険業界、実験終え実装段階に 販売のあり方も再定義へ 日本経済新聞／事業視点: AI活用",
-      "business_tags": [
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "AI活用"
-      ],
-      "published": "2026-04-05 17:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9KTXRjYXRQVTYwOC1KYkdocmVHaHphdlN3c201cXhxcnNxV1JLSnVRMUxLbkFWZElJNnd5NjI4elVJX2kxVGIyOWdBV2k2WGhCd1NrSU5BSXVrbHhHdmJIS05HTmNlb1hLc3VtTg?oc=5"
-    },
-    {
-      "title": "生成AI利活用の次世代アーキテクチャと自社競争力強化",
-      "source": "NTT Data",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "生成AI利活用の次世代アーキテクチャと自社競争力強化 NTT Data／事業視点: AI活用",
-      "business_tags": [
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "AI活用"
-      ],
-      "published": "2026-04-05 16:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hUWtRMUZQSVVYMFdHeHUtb3d1YkpLa1BONTgyUmYzZDM4SUdmcnQ1ay02dUdtT3FVTzdIQ0o0REJSelBhSWtfUFhQVzZqd3R4aG93RFE1QkI4bHVqWVRBVWhLUDl3dndtSnZKQQ?oc=5"
-    },
-    {
-      "title": "規制が厳しい医薬品製造業界で、“偶然”を追い風にAI活用を推進 「バッドインフルエンサー」への対処法 (1/3)",
-      "source": "EnterpriseZine",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "規制が厳しい医薬品製造業界で、“偶然”を追い風にAI活用を推進 「バッドインフルエンサー」への対処法 (1/3) EnterpriseZine／事業視点: AI活用",
-      "business_tags": [
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "AI活用"
-      ],
-      "published": "2026-04-05 12:12",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBCVDlKeGc0NHQwbGM2RVR5d0ZZZFYtLVdWeEJJNEk0YllBNkpISlgyVDV1RVRSdXZjZzVKd0NaVWpPb0doLVhLczUyRF91TzJrU2liVk8xZGtaQQ?oc=5"
-    },
-    {
-      "title": "【画像】キャベツより効率的？ 専門家が推奨する「食物繊維の種類」と推奨食材",
-      "source": "womenshealthmag.com",
-      "category": "料理・食",
-      "subcategory": "レシピ・料理",
-      "summary": "【画像】キャベツより効率的？ 専門家が推奨する「食物繊維の種類」と推奨食材 womenshealthmag.com／事業視点: レシピ活用",
-      "business_tags": [
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "レシピ活用"
-      ],
-      "published": "2026-04-05 10:04",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOXY4MnktVVo0a1ZmRFJhREoxY2ZHdmpWMTRCSUhqbWwtT21QWms4dVpSbFVFOFIzcEM3OEJfaFpOQWZNbFFJUUxYNl91UFVsQVY5LU4weFRJVTlYVldJelYwTFRLc0ZPNExwczVOV3V5RXU2TWZsemtHOXNKa0VnYzZPcjBZeXpFMGgtaXdzM29YLVdfU0ZEd0NR?oc=5"
-    },
-    {
-      "title": "新しいオーブン「東芝の石窯ドーム」がやってきた！わが家の料理男子も夢中になるオーブン料理【LEE DAYS club clara】",
-      "source": "HAPPY PLUS（ハピプラ）",
-      "category": "料理・食",
-      "subcategory": "レシピ・料理",
-      "summary": "新しいオーブン「東芝の石窯ドーム」がやってきた！わが家の料理男子も夢中になるオーブン料理【LEE DAYS club clara】 HAPPY PLUS（ハピプラ）／事業視点: レシピ活用",
-      "business_tags": [
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "レシピ活用"
-      ],
-      "published": "2026-04-05 09:01",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE51Vmd5blpnWWtGZU1qUDNzUEM3c2xOWkZfejgxbXg4NTcxb01ueWVhcDB4eVZpTDRUUkd4bmpsREhLWjJSLTJXcWJ0UGFrQQ?oc=5"
-    },
-    {
-      "title": "『Hot Meals Fast Wheels』フードトラックを経営するパーティーゲームが発表。料理、買い出し、運転を最大4人でリアルタイムにプレイするカオスな料理シミュレーター",
-      "source": "famitsu.com",
-      "category": "料理・食",
-      "subcategory": "レシピ・料理",
-      "summary": "『Hot Meals Fast Wheels』フードトラックを経営するパーティーゲームが発表。料理、買い出し、運転を最大4人でリアルタイムにプレイするカオスな料理シミュレーター f／事業視点: レシピ活用",
-      "business_tags": [
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "レシピ活用"
-      ],
-      "published": "2026-04-05 08:00",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1KS3Q2NS1lQ08tTXJkV1pGN0Z5dWxRV2JReUJBRGEzdWt6dGZKaXNnNWVOUXBsVGJOMWprR3RGcm4tUC14TllWUm83ODJhX2thUGNHR09mZw?oc=5"
-    },
-    {
-      "title": "春のピクニック＆お花見におすすめ！お弁当・サンドイッチ・寿司・唐揚げレシピ17品",
-      "source": "HAPPY PLUS（ハピプラ）",
-      "category": "料理・食",
-      "subcategory": "レシピ・料理",
-      "summary": "春のピクニック＆お花見におすすめ！お弁当・サンドイッチ・寿司・唐揚げレシピ17品 HAPPY PLUS（ハピプラ）／事業視点: レシピ活用",
-      "business_tags": [
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "レシピ活用"
-      ],
-      "published": "2026-04-05 07:00",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5EVjFzS01CRmVSbWhENG5RRUpzbC1yR2tFT01NM3JCWGxtRzNmYUZldXRXamI2QWUwZ3BCaXd6TUU0bzc4UmZta1hBUTBNZw?oc=5"
-    },
-    {
-      "title": "日本のアニメ・漫画のキャラに酷似、ＡＩ生成の動画や画像氾濫…「権利複雑」と業界の動き鈍く（読売新聞オンライン）",
-      "source": "Yahoo!ニュース",
-      "category": "AI・テクノロジー",
-      "subcategory": "話題",
-      "summary": "日本のアニメ・漫画のキャラに酷似、ＡＩ生成の動画や画像氾濫…「権利複雑」と業界の動き鈍く（読売新聞オンライン） Yahoo!ニュース／事業視点: オンライン料理教室, AI活用, 発信ネタ",
-      "business_tags": [
-        "online_cooking",
-        "ai_utilization",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "オンライン料理教室",
-        "AI活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-05 06:01",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41TUNvRHlxb043Y1NITVc5YnRaOXhiSFJydmJsMVBYLVpfbng0ZDNJQmNaTFhNdGNxbnc4akt4Y09NSE9IX0tFMTNtcVEzbkt0STZUbXpBcW8wSVoyaE9sVGc0dHNlMGVkREdJTTV6TWp2b3NRbWhLTFM1cXFZNk0?oc=5"
-    },
-    {
-      "title": "アンコウちくわに舌鼓 子ども食堂で提供〈小田原市・箱根町・湯河原町・真鶴町〉",
-      "source": "ｄメニューニュース",
-      "category": "パパ・育児",
-      "subcategory": "話題",
-      "summary": "アンコウちくわに舌鼓 子ども食堂で提供〈小田原市・箱根町・湯河原町・真鶴町〉 ｄメニューニュース／事業視点: 共食・家庭, 発信ネタ",
-      "business_tags": [
-        "family_communication",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "共食・家庭",
-        "発信ネタ"
-      ],
-      "published": "2026-04-05 04:00",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONWU2a0FCZWI4VzFwOWNGd1FMT3J6RUNrcEgxalVjNjdwZlZoMHlwSTBaNmJOS1Y3N1ZxTUZmWEkxUFZmbWVLckpIZnhxTXNUTU5RZ04tYXpIT0hzalFXZUJOX2RGUXhaMEpjYy1Nem96eEJwQVh0RG81eDh1RUhOU9IBgAFBVV95cUxONWU2a0FCZWI4VzFwOWNGd1FMT3J6RUNrcEgxalVjNjdwZlZoMHlwSTBaNmJOS1Y3N1ZxTUZmWEkxUFZmbWVLckpIZnhxTXNUTU5RZ04tYXpIT0hzalFXZUJOX2RGUXhaMEpjYy1Nem96eEJwQVh0RG81eDh1RUhOUw?oc=5"
-    },
-    {
-      "title": "子どもの「寝つき」　実は良くする“食事・時間”があった！　管理栄養士が解説",
-      "source": "ｄメニューニュース",
-      "category": "パパ・育児",
-      "subcategory": "健康",
-      "summary": "子どもの「寝つき」 実は良くする“食事・時間”があった！ 管理栄養士が解説 ｄメニューニュース／事業視点: 健康経営, 共食・家庭",
-      "business_tags": [
-        "health_management",
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "健康経営",
-        "共食・家庭"
-      ],
-      "published": "2026-04-05 01:15",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wNjVPX2llajNfcENRNVlYejRva3NxVGx0ME0tYi16MU5qaE4wV1VaTWxYQjVkWTBIaFFKNmFxTl8tZVJNOWdzaXY5aFFCVm4zU3lid2hDR3E1TW1WbXV0cXFWR3pndjIzMjJ1dmNlc0VKSy1RNXJGRFQ2ZHBsd9IBgwFBVV95cUxQVGhXcGZQX0tNM0VheTRHWW5iRzVBVlNNeHpKUkpBRjlBeXJaR0tmeU9MREVzYnBPSmo1NGJtd2Nqd2tFbjhKdUszRzF2T2dCVGVWUUNLemUyMTVkaDRBREhBRXZvUldObUZCYzkwQUpuWENkTi16Y3BmcDVDQ2J2c0tZaw?oc=5"
-    },
-    {
-      "title": "辺野古沖事故「家族想いの子、どうして」 ネットに投稿「遺族メモ」",
-      "source": "朝日新聞",
-      "category": "パパ・育児",
-      "subcategory": "育児・家庭",
-      "summary": "辺野古沖事故「家族想いの子、どうして」 ネットに投稿「遺族メモ」 朝日新聞／事業視点: 共食・家庭",
-      "business_tags": [
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "共食・家庭"
-      ],
-      "published": "2026-04-04 12:34",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE96b0d4UUlYenZBUXZueTE1TjEtTmxsNFdpY1hMSXh2WXJLM0J2RjNhck5iSWNvYzFDMDZBWjhGYm5Ga2xsQmNPOGRGdmlUaWhhQlZydm9DM1ZWWFk4WnZIQ1dpT2hGOXc?oc=5"
-    },
-    {
-      "title": "クマは栄養状態良くても人里出没か、冬眠までに少しでも脂肪蓄えようと…これまでの一般的な見方覆す調査結果",
-      "source": "読売新聞オンライン",
-      "category": "料理・食",
-      "subcategory": "調査",
-      "summary": "クマは栄養状態良くても人里出没か、冬眠までに少しでも脂肪蓄えようと…これまでの一般的な見方覆す調査結果 読売新聞オンライン／事業視点: 健康経営, オンライン料理教室, レシピ活用",
-      "business_tags": [
-        "health_management",
-        "online_cooking",
-        "recipe_business",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "健康経営",
-        "オンライン料理教室",
-        "レシピ活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-04 08:33",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB2U0JsYS1ScU5DcGlZZU9ENElONFRGMjlNdUxMZF9YbjU5Xzc4cXgxcG9MbW9SeG5XT2NYNUtHaUdtN0pITDdLYUFNTm1jQnBaRndTbl9UTV9uTm5INnQ2S2ZwWWRUQQ?oc=5"
-    },
-    {
-      "title": "校歌の作詞作曲にAIを使う 完成",
-      "source": "Yahoo!ニュース",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "校歌の作詞作曲にAIを使う 完成 Yahoo!ニュース／事業視点: AI活用",
-      "business_tags": [
-        "ai_utilization"
-      ],
-      "business_tag_labels": [
-        "AI活用"
-      ],
-      "published": "2026-04-04 06:47",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBJOW5aeklQTlg5YzZSMUlDaW9MMGRfa2M3QW1icFk2Nnp5U1llRm45R1pzMEQzLTRRVVcyTjNGOHZRSnhmV0hXQkRQTFhMdGdR?oc=5"
-    },
-    {
-      "title": "外食、「特定技能」受け入れ停止",
-      "source": "日本経済新聞",
-      "category": "料理・食",
-      "subcategory": "話題",
-      "summary": "話題に関する話題。料理・食分野で注目されるニュースです。／事業視点: レシピ活用, 発信ネタ",
-      "business_tags": [
-        "recipe_business",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "レシピ活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-04 05:30",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9wNWZMME9jN2hqUGhObkliVDdyOWVCdXVLWTNFRmZGam1mRlVfNlc1V2FrdkRNbUxhcy10Wi1Hd0xNWHA2ZHhmeG9jWnFFMmRvS2U1LTQyMVdUa3RrWWp6a1pVTGVoZG5MUWllUA?oc=5"
-    },
-    {
-      "title": "「AIが人間を使う」時代が訪れる、AIエージェントの驚くべき新トレンド",
-      "source": "Forbes JAPAN",
-      "category": "AI・テクノロジー",
-      "subcategory": "AI/DX",
-      "summary": "「AIが人間を使う」時代が訪れる、AIエージェントの驚くべき新トレンド Forbes JAPAN／事業視点: AI活用, 発信ネタ",
-      "business_tags": [
-        "ai_utilization",
-        "content_marketing"
-      ],
-      "business_tag_labels": [
-        "AI活用",
-        "発信ネタ"
-      ],
-      "published": "2026-04-04 05:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1sY1lwNnBCTEFmbUNIbElMY0x5b3JXdHBKVlF6MlRhd0JvVUszdWIxZlAwVGZUX05hTU56bW1mWi1FTjV1TzNxWG9aa1BzRDZ2SDhXb0RJZHQ?oc=5"
-    },
-    {
-      "title": "共学化し初…日本栄養大で入学式 埼玉・坂戸 女子栄養大学から名称を変更 男子55人を含む新入生449人が新たな門出 男子新入生「歴史に恥じない1期生に」（埼玉新聞）",
-      "source": "Yahoo!ニュース",
-      "category": "料理・食",
-      "subcategory": "健康",
-      "summary": "共学化し初…日本栄養大で入学式 埼玉・坂戸 女子栄養大学から名称を変更 男子55人を含む新入生449人が新たな門出 男子新入生「歴史に恥じない1期生に」（埼玉新聞） Yahoo!ニ／事業視点: 健康経営, レシピ活用",
-      "business_tags": [
-        "health_management",
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "健康経営",
-        "レシピ活用"
-      ],
-      "published": "2026-04-04 00:54",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE15Y0dqQ0F4bXNJdW9YMGFOa01LQVZjUGx6NXFzV0xPeGJGTERqRDY4QzhhZFVnVnJIVTNiVjM2RVBwRXotM2FHcXFnRHp3Tnl5WHp5LVI5N3djRlIxQVFKNDdxRkt5Z0swZDd3RnZsaFlpWUVmVVJ5SERTUFhyOGs?oc=5"
-    },
-    {
-      "title": "共学化した「日本栄養大」に男子55人が仲間入り 同級生の大多数は女子…「緊張するけど」一緒に夢を追う",
-      "source": "東京新聞デジタル",
-      "category": "料理・食",
-      "subcategory": "健康",
-      "summary": "共学化した「日本栄養大」に男子55人が仲間入り 同級生の大多数は女子…「緊張するけど」一緒に夢を追う 東京新聞デジタル／事業視点: 健康経営, レシピ活用",
-      "business_tags": [
-        "health_management",
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "健康経営",
-        "レシピ活用"
-      ],
-      "published": "2026-04-03 22:48",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4zcU1iNEVMRDVvYjZTU2xEQWtNMDhTRHBTR2poV1dLRi11OGZLZkFXQ0d6THM0R0xzX3ZraTF2RkdudmZhWDQwS2FQYWxFS3gzSnZN?oc=5"
-    },
-    {
-      "title": "交わる感性、広がる伝統。長崎食材の魅力と卓袱料理の新たな可能性を体験！",
-      "source": "rkb.jp",
-      "category": "料理・食",
-      "subcategory": "レシピ・料理",
-      "summary": "交わる感性、広がる伝統。長崎食材の魅力と卓袱料理の新たな可能性を体験！ rkb.jp／事業視点: レシピ活用",
-      "business_tags": [
-        "recipe_business"
-      ],
-      "business_tag_labels": [
-        "レシピ活用"
-      ],
-      "published": "2026-04-03 21:00",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HUlpvU0JUdGN4cE9wc1Naby1EYkhTQTE4YUNzSHlqb01YNlY2UEZSXzFNRGVoYl9TdHVRNkF0czJBZEtmQV9QUVRvUmVBSjQ?oc=5"
-    },
-    {
-      "title": "「正社員共働きは持続可能？」研究者も疑問 通勤と育児で板挟みに",
-      "source": "日本経済新聞",
-      "category": "パパ・育児",
-      "subcategory": "育児・家庭",
-      "summary": "「正社員共働きは持続可能？」研究者も疑問 通勤と育児で板挟みに 日本経済新聞／事業視点: 共食・家庭",
-      "business_tags": [
-        "family_communication"
-      ],
-      "business_tag_labels": [
-        "共食・家庭"
-      ],
-      "published": "2026-04-03 20:00",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAtVjJyS0lNZ2ZGWjRCRThOZnpPSWtfdHRzZ0FhMThXWGFiek01dHZ5MkpaVVFGTW1xS3JISDc3U2hfYURqNzFqaG40TlItam1Xa2lGUXNBSkpzR19FcTVhaWxNaXE0OGI0NElWeQ?oc=5"
+      "published": "2026-04-06 07:29",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBiWk1SaHEzX2liQ19zZUVyU19NaTRDT2R0M24zeHJxUFZzcGg5RlFEcVJfbkJZYVZOeUoycTRlU3ZiTjRXWkppdmNVc0hhZnpPMFVzNFNxOHhyOWV2eDJKODdUcUdkTWFpMUs4?oc=5"
     }
   ]
 }
